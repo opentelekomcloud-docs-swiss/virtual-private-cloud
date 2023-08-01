@@ -1,3 +1,8 @@
-=====================================================
-Welcome to the documentation of virtual-private-cloud
-=====================================================
+Virtual Private Cloud
+=====================
+
+.. directive_wrapper::
+   :class: container-sbv
+
+   .. service_card::
+      :service_type: vpc
