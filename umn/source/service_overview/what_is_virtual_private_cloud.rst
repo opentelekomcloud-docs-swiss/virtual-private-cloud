@@ -13,7 +13,7 @@ The Virtual Private Cloud (VPC) service enables you to provision logically isola
 Within your own VPC, you can create security groups and VPNs, configure IP address ranges, specify bandwidth sizes, manage the networks in the VPC, and make changes to these networks as needed, quickly and securely. You can also define rules to control communications between ECSs in the same security group or in different security groups.
 
 
-.. figure:: /_static/images/en-us_image_0209606948.png
+.. figure:: /_static/images/en-us_image_0000001865663209.png
    :alt: **Figure 1** VPC components
 
    **Figure 1** VPC components

@@ -17,7 +17,9 @@ Procedure
 
 #. Click |image1| in the upper left corner and select the desired region and project.
 
-#. On the console homepage, under , click **Virtual Private Cloud**.
+#. Click |image2| in the upper left corner and choose > **Virtual Private Cloud**.
+
+   The **Virtual Private Cloud** page is displayed.
 
 #. In the navigation pane on the left, choose **Access Control** > **Security Groups**.
 
@@ -53,4 +55,5 @@ Procedure
 
 #. Confirm the inbound and outbound rules of the template and click **OK**.
 
-.. |image1| image:: /_static/images/en-us_image_0141273034.png
+.. |image1| image:: /_static/images/en-us_image_0000001818982734.png
+.. |image2| image:: /_static/images/en-us_image_0000001865582681.png

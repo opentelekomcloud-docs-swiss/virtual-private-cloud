@@ -5,9 +5,9 @@
 Virtual IP Address
 ==================
 
-A virtual IP address can be shared among multiple ECSs. An ECS can have both private and virtual IP addresses, and you can access the ECS through either IP address. A virtual IP address has the same network access capabilities as a private IP address, including layer 2 and layer 3 communication in VPCs, access between VPCs using VPC peering connections, as well as access through EIPs, VPN connections, and Direct Connect connections.
+You can use either IP address to enable layer 2 and layer 3 communications in a VPC, access a different VPC using peering connections, and access cloud servers through EIPs, Direct Connect connections, and VPN connections.
 
-You can bind ECSs deployed in active/standby mode with the same virtual IP address, and then bind an EIP to the virtual IP address. Virtual IP addresses can work together with Keepalived to ensure high availability and disaster recovery. If the active ECS is faulty, the standby ECS automatically takes over services from the active one.
+You can bind a virtual IP address to ECSs deployed in the active/standby pair, and then bind an EIP to the virtual IP address. Virtual IP addresses can work together with Keepalived to ensure high availability and disaster recovery. If the active ECS is faulty, the standby ECS automatically takes over services from the active one.
 
 Networking
 ----------
@@ -16,7 +16,7 @@ Virtual IP addresses are used for high availability and can work together with K
 
 -  **Networking mode 1**: HA
 
-   If you want to improve service availability and avoid single points of failure, you can deploy ECSs in the active/standby mode or deploy one active ECS and multiple standby ECSs. In this arrangement, the ECSs all use the same virtual IP address. If the active ECS becomes faulty, a standby ECS takes over services from the active ECS and services continue uninterrupted.
+   To improve service availability and eliminate single points of failure, you can deploy ECSs in the active/standby pair or deploy one active ECS and multiple standby ECSs. And then, you can bind the same virtual IP address to these ECSs. If the active ECS becomes faulty, a standby ECS takes over services from the active ECS and services continue uninterrupted.
 
 
    .. figure:: /_static/images/en-us_image_0209608153.png
@@ -24,8 +24,8 @@ Virtual IP addresses are used for high availability and can work together with K
 
       **Figure 1** Networking diagram of the HA mode
 
-   -  In this configuration, a single virtual IP address is bound to two ECSs in the same subnet.
-   -  Keepalived is then used to configure the two ECSs to work in the active/standby mode. Follow industry standards for configuring Keepalived. The details are not included here.
+   -  As shown in the above figure, bind a virtual IP address to two ECSs in the same subnet.
+   -  Configure Keepalived for the two ECSs to work in the active/standby pair. Follow industry standards for configuring Keepalived. The details are not included here.
 
 -  **Networking mode 2**: HA load balancing cluster
 
@@ -38,7 +38,7 @@ Virtual IP addresses are used for high availability and can work together with K
       **Figure 2** HA load balancing cluster
 
    -  Bind a single virtual IP address to two ECSs.
-   -  Configure the two ECSs as LVS nodes working as direct routers and use Keepalived to configure the nodes in the active/standby mode. The two ECSs will evenly forward requests to different backend servers.
+   -  Configure the two ECSs as LVS nodes working as direct routers and use Keepalived to configure the nodes in the active/standby pair. The two ECSs will evenly forward requests to different backend servers.
    -  Configure two more ECSs as backend servers.
    -  Disable the source/destination check for the two backend servers.
 
@@ -53,4 +53,4 @@ Application Scenarios
 
 -  Using a VPN, Direct Connect, or VPC peering connection to access a virtual IP address
 
-   To ensure high availability and access to the Internet, use a VPN for security and Direct Connect for a stable connection. The VPC peering connection is needed so that the VPCs in the same region can communicate with each other.
+   To ensure high availability and access to the Internet, use a VPN for security and Direct Connect for a stable connection. A VPC peering connection is needed so that two VPCs in the same region can communicate with each other.
