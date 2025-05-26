@@ -120,6 +120,15 @@ Response Parameters
    | public                     | Boolean               | Specifies whether the firewall group can be shared by different tenants.                                                  |
    +----------------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------+
    | status                     | String                | Specifies the status of the firewall policy.                                                                              |
+   |                            |                       |                                                                                                                           |
+   |                            |                       | The value can be:                                                                                                         |
+   |                            |                       |                                                                                                                           |
+   |                            |                       | -  **ACTIVE** (Normal)                                                                                                    |
+   |                            |                       | -  **INACTIVE** (Inactive)                                                                                                |
+   |                            |                       | -  **ERROR** (Error occurred)                                                                                             |
+   |                            |                       | -  **PENDING_CREATE** (Creating)                                                                                          |
+   |                            |                       | -  **PENDING_UPDATE** (Updating)                                                                                          |
+   |                            |                       | -  **PENDING_DELETE** (Deleting)                                                                                          |
    +----------------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------+
    | admin_state_up             | Boolean               | Specifies the administrative status of the firewall.                                                                      |
    +----------------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------+

@@ -73,16 +73,17 @@ Response Message
    |                       |                       | Format: *yyyy-MM-ddTHH:mm:ss*                                                                  |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------+
 
-Example:
---------
-
-Example request
+Example Request
+---------------
 
 .. code-block:: text
 
    GET https://{Endpoint}/v2.0/floatingips/1a3a2818-d9b4-4a9c-8a19-5252c499d1cd
 
-Example response
+Example Response
+----------------
+
+**Status code: 200**
 
 .. code-block::
 

@@ -22,7 +22,7 @@ GET /v2.0/fwaas/firewall_groups/{firewall_group_id}
 .. table:: **Table 1** Parameter description
 
    +-------------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------------+
-   | Name              | Mandatory | Type   | Description                                                                                                                       |
+   | Parameter         | Mandatory | Type   | Description                                                                                                                       |
    +===================+===========+========+===================================================================================================================================+
    | firewall_group_id | Yes       | String | Specifies the firewall group ID, which uniquely identifies the firewall group. The **fire_group_id** value is used as the filter. |
    +-------------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------------+
@@ -74,6 +74,15 @@ Response Parameters
    | public                     | Boolean               | Specifies whether the firewall group can be shared by different tenants.                                                  |
    +----------------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------+
    | status                     | String                | Specifies the status of the firewall policy.                                                                              |
+   |                            |                       |                                                                                                                           |
+   |                            |                       | The value can be:                                                                                                         |
+   |                            |                       |                                                                                                                           |
+   |                            |                       | -  **ACTIVE** (Normal)                                                                                                    |
+   |                            |                       | -  **INACTIVE** (Inactive)                                                                                                |
+   |                            |                       | -  **ERROR** (Error occurred)                                                                                             |
+   |                            |                       | -  **PENDING_CREATE** (Creating)                                                                                          |
+   |                            |                       | -  **PENDING_UPDATE** (Updating)                                                                                          |
+   |                            |                       | -  **PENDING_DELETE** (Deleting)                                                                                          |
    +----------------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------+
    | admin_state_up             | Boolean               | Specifies the administrative status of the firewall.                                                                      |
    +----------------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------+

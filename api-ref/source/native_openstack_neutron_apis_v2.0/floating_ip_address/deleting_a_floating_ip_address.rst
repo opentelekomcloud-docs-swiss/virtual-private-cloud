@@ -37,16 +37,17 @@ Response Message
 
 None
 
-Example:
---------
+Example Request
+---------------
 
-Example request
+Delete the floating IP address whose ID is a95ec431-8473-463b-aede-34fb048ee3a7.
 
 .. code-block:: text
 
    DELETE https://{Endpoint}/v2.0/floatingips/a95ec431-8473-463b-aede-34fb048ee3a7
 
-Example response
+Example Response
+----------------
 
 None
 

@@ -8,7 +8,7 @@ Creating a Firewall Policy
 Function
 --------
 
-This API is used to create a firewall policy. A firewall policy must be associated with a firewall group. You can learn more about the :ref:`relationships among network ACL groups, policies, and rules <en-us_topic_0000001487936070>`.
+This API is used to create a firewall policy which must be bound to a firewall group. You can learn more about the :ref:`relationships among firewall groups, policies, and rules <en-us_topic_0000001487936070>`.
 
 URI
 ---

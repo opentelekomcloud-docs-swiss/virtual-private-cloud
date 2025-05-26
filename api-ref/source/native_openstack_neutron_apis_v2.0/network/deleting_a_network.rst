@@ -22,7 +22,7 @@ DELETE /v2.0/networks/{network_id}
 .. table:: **Table 1** Parameter description
 
    ========== ========= =========================
-   Name       Mandatory Description
+   Parameter  Mandatory Description
    ========== ========= =========================
    network_id Yes       Specifies the network ID.
    ========== ========= =========================
