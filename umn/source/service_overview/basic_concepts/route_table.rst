@@ -8,34 +8,29 @@ Route Table
 Route Tables
 ------------
 
-A route table contains a set of routes that are used to determine where network traffic from your subnets in a VPC is directed. Each subnet must be associated with a route table. You can associate a subnet with only one route table at a time, but you can associate multiple subnets with the same route table.
+A route table contains a set of routes that are used to determine where network traffic from your subnets in a VPC is directed. Each subnet must be associated with a route table. A subnet can only be associated with one route table, but you can associate multiple subnets with the same route table.
 
 Both IPv4 and IPv6 routes are supported.
 
 
-.. figure:: /_static/images/en-us_image_0000001229959315.png
-   :alt: **Figure 1** Route Table
+.. figure:: /_static/images/en-us_image_0000001865662949.png
+   :alt: **Figure 1** Route tables
 
-   **Figure 1** Route Table
+   **Figure 1** Route tables
 
-Default Route Table and Custom Route Table
-------------------------------------------
+-  Default route table: When you create a VPC, the system automatically generates a default route table for the VPC. If you create a subnet in the VPC, the subnet automatically associates with the default route table. The default route table ensures that subnets in a VPC can communicate with each other.
 
-When you create a VPC, the system automatically generates a default route table for the VPC. If you create a subnet in the VPC, the subnet automatically associates with the default route table.
+   -  You can add routes to, delete routes from, and modify routes in the default route table, but cannot delete the table.
+   -  When you create a VPC endpoint, VPN or Direct Connect connection, the default route table automatically delivers a route that cannot be deleted or modified.
 
--  You can add routes to, delete routes from, and modify routes in the default route table, but cannot delete the table.
--  When you create a VPC endpoint, VPN or Direct Connect connection, the default route table automatically delivers a route that cannot be deleted or modified.
+-  Custom route table: If you do not want to use the default route table, you can create a custom route table and associate it with the subnet. Custom route tables can be deleted if they are no longer required.
 
-If you do not want to use the default route table, you can now create a custom route table and associate it with the subnet. You can delete the custom route table if it is no longer required.
-
-.. note::
-
-   The custom route table associated with a subnet affects only the outbound traffic. The default route table determines the inbound traffic.
+   The custom route table associated with a subnet affects only the outbound traffic. The default route table of a subnet controls the inbound traffic.
 
 Route
 -----
 
-A route is configured with the destination, next hop type, and next hop to determine where network traffic is directed. Routes are classified into system routes and custom routes.
+You can add routes to default and custom route tables and configure the destination, next hop type, and next hop in the routes to determine where network traffic is directed. Routes are classified into system routes and custom routes.
 
 -  System routes: These routes are automatically added by the system and cannot be modified or deleted.
 
@@ -56,11 +51,11 @@ A route is configured with the destination, next hop type, and next hop to deter
 
 -  Custom routes: These are routes that you can add, modify, and delete. The destination of a custom route cannot overlap with that of a system route.
 
-   You can add a custom route and configure the destination, next hop type, and next hop in the route to determine where network traffic is directed. :ref:`Table 1 <en-us_topic_0038263963__en-us_topic_0118498988_en-us_topic_0121831807_table1727714140542>` lists the supported types of next hops.
+   You can add a custom route and configure the destination, next hop type, and next hop in the route to determine where network traffic is directed. :ref:`Table 1 <en-us_topic_0038263963__en-us_topic_0121831807_table1727714140542>` lists the supported types of next hops.
 
    You cannot add two routes with the same destination to a VPC route table even if their next hop types are different. The route priority depends on the destination. According to the longest match routing rule, the destination with a higher matching degree is preferentially selected for packet forwarding.
 
-   .. _en-us_topic_0038263963__en-us_topic_0118498988_en-us_topic_0121831807_table1727714140542:
+   .. _en-us_topic_0038263963__en-us_topic_0121831807_table1727714140542:
 
    .. table:: **Table 1** Next hop type
 

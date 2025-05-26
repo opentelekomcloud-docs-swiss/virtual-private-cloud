@@ -7,14 +7,12 @@ Subnet
 
 A subnet is a unique CIDR block with a range of IP addresses in a VPC. All resources in a VPC must be deployed on subnets.
 
--  By default, ECSs in all subnets of the same VPC can communicate with one another, but ECSs in different VPCs cannot.
+-  After a subnet is created, its CIDR block cannot be modified. Subnets in the same VPC cannot overlap.
 
-   You can create VPC peering connections to enable ECSs in different VPCs but in the same region to communicate with one another. For details, see :ref:`VPC Peering Connection Overview <en-us_topic_0046655036>`.
+   A subnet mask can be between the netmask of its VPC CIDR block and /29 netmask. If a VPC CIDR block is 10.0.0.0/16, its subnet mask can be between 16 and 29.
 
--  After a subnet is created, its CIDR block cannot be modified.
+   For example, if the CIDR block of VPC-A is 10.0.0.0/16, you can specify 10.0.0.0/24 for subnet A01, 10.0.1.0/24 for subnet A02, and 10.0.3.0/24 for subnet A03.
 
-   The subnets used to deploy your resources must reside within your VPC, and the subnet masks used to define them can be between the netmask of its VPC CIDR block and /29 netmask.
+   .. note::
 
-   -  10.0.0.0 - 10.255.255.255
-   -  172.16.0.0 - 172.31.255.255
-   -  192.168.0.0 - 192.168.255.255
+      By default, you can create a maximum of 100 subnets in each region. If this cannot meet your service requirements, request a quota increase by referring to :ref:`What Is a Quota? <vpc_faq_0051>`
