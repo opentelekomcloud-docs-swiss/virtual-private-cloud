@@ -31,14 +31,14 @@ VPC is a project-level service. When you call the API, set **auth.scope** in the
                        "name": "username",   // IAM user name
                        "password": "********",  // IAM user password
                        "domain": {
-                           "name": "domainname"  // Name of the account to which the IAM user belongs
+                           "name": "domainname"  // Name of an IAM account
                        }
                    }
                }
            },
            "scope": {
                "project": {
-                   "name": "xxxxxxxx"    // Project Name
+                   "name": "xxxxxxxx"    // Project name
                }
            }
        }
@@ -48,6 +48,6 @@ After a token is obtained, the **X-Auth-Token** header field must be added to re
 
 .. code-block:: text
 
-   POST https://{{endpoint}}/v3/auth/projects
+   GETT https://{{endpoint}}/v3/auth/projects
    Content-Type: application/json
-   X-Auth-Token: ABCDEFJ....
+   X-Auth-Token: ABCDEFG....

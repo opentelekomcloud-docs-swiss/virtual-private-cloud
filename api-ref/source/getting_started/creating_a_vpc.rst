@@ -51,7 +51,7 @@ To use token authentication, you need to obtain a token and add **X-Auth-Token**
                  "name": "vpc",
                  "cidr": "192.168.0.0/16",
                  "status": "CREATING",
-                 "routes": []
+         "routes": [].
              }
          }
 

@@ -22,7 +22,7 @@ DELETE /v2.0/fwaas/firewall_groups/{firewall_group_id}
 .. table:: **Table 1** Parameter description
 
    +-------------------+-----------+--------+--------------------------------------------------------------------------------+
-   | Name              | Mandatory | Type   | Description                                                                    |
+   | Parameter         | Mandatory | Type   | Description                                                                    |
    +===================+===========+========+================================================================================+
    | firewall_group_id | Yes       | String | Specifies the firewall group ID, which uniquely identifies the firewall group. |
    +-------------------+-----------+--------+--------------------------------------------------------------------------------+

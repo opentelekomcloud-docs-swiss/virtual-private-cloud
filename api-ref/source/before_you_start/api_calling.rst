@@ -5,4 +5,6 @@
 API Calling
 ===========
 
-VPC supports Representational State Transfer (REST) APIs, allowing you to call APIs using HTTPS. For details about API calling, see :ref:`Calling APIs <vpc_api00_0007>`.
+VPC supports Representational State Transfer (REST) APIs, allowing you to call APIs using HTTPS.
+
+For details about API calling, see :ref:`Calling APIs <vpc_api00_0007>`.

@@ -91,10 +91,10 @@ Response Message
    | tenant_id             | String                | Specifies the project ID.                                                                      |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------+
 
-Example:
---------
+Example Request
+---------------
 
-Example request
+Create a floating IP address whose network is **0a2228f2-7f8a-45f1-8e09-9039e1d09975**.
 
 .. code-block:: text
 
@@ -106,7 +106,12 @@ Example request
        }
    }
 
-Example response
+Example Response
+----------------
+
+**Status code: 201**
+
+Normal response to POST requests
 
 .. code-block::
 
@@ -116,13 +121,10 @@ Example response
            "status": "DOWN",
            "router_id": null,
            "tenant_id": "bbfe8c41dd034a07bebd592bf03b4b0c",
-           "project_id": "bbfe8c41dd034a07bebd592bf03b4b0c",
            "floating_network_id": "0a2228f2-7f8a-45f1-8e09-9039e1d09975",
            "fixed_ip_address": null,
            "floating_ip_address": "88.88.215.205",
            "port_id": null,
-           "created_at": "2018-09-20T02:10:02",
-           "updated_at": "2018-09-20T02:10:02"
        }
    }
 

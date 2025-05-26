@@ -23,44 +23,44 @@ GET /v2.0/floatingips
 
 .. table:: **Table 1** Parameter description
 
-   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter           | Mandatory       | Type            | Description                                                                                                                                                                                                            |
-   +=====================+=================+=================+========================================================================================================================================================================================================================+
-   | id                  | No              | String          | Specifies the floating IP address ID.                                                                                                                                                                                  |
-   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | floating_ip_address | No              | String          | Specifies the floating IPv4 address.                                                                                                                                                                                   |
-   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | floating_network_id | No              | String          | Specifies the external network ID.                                                                                                                                                                                     |
-   |                     |                 |                 |                                                                                                                                                                                                                        |
-   |                     |                 |                 | You can only use fixed external network.                                                                                                                                                                               |
-   |                     |                 |                 |                                                                                                                                                                                                                        |
-   |                     |                 |                 | You can use **GET /v2.0/networks?router:external=True** or                                                                                                                                                             |
-   |                     |                 |                 |                                                                                                                                                                                                                        |
-   |                     |                 |                 | **GET /v2.0/networks?name={floating_network}** or run the **neutron net-external-list** command to obtain information about the external network.                                                                      |
-   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | router_id           | No              | String          | Specifies the ID of the belonged router.                                                                                                                                                                               |
-   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | port_id             | No              | String          | Specifies the port ID.                                                                                                                                                                                                 |
-   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | fixed_ip_address    | No              | String          | Specifies the private IP address of the associated port.                                                                                                                                                               |
-   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | tenant_id           | No              | String          | Specifies the project ID.                                                                                                                                                                                              |
-   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | limit               | Integer         | No              | Specifies the number of records that will be returned on each page. The value is from 0 to intmax (2^31-1). The default value is 2000.                                                                                 |
-   |                     |                 |                 |                                                                                                                                                                                                                        |
-   |                     |                 |                 | **limit** can be used together with **marker**. For details, see the parameter description of **marker**.                                                                                                              |
-   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | marker              | String          | No              | Specifies a resource ID for pagination query, indicating that the query starts from the next record of the specified resource ID.                                                                                      |
-   |                     |                 |                 |                                                                                                                                                                                                                        |
-   |                     |                 |                 | This parameter can work together with the parameter **limit**.                                                                                                                                                         |
-   |                     |                 |                 |                                                                                                                                                                                                                        |
-   |                     |                 |                 | -  If parameters **marker** and **limit** are not passed, resource records on the first page will be returned.                                                                                                         |
-   |                     |                 |                 | -  If the parameter **marker** is not passed and the value of parameter **limit** is set to **10**, the first 10 resource records will be returned.                                                                    |
-   |                     |                 |                 | -  If the value of the parameter **marker** is set to the resource ID of the 10th record and the value of parameter **limit** is set to **10**, the 11th to 20th resource records will be returned.                    |
-   |                     |                 |                 | -  If the value of the parameter **marker** is set to the resource ID of the 10th record and the parameter **limit** is not passed, resource records starting from the 11th records (including 11th) will be returned. |
-   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | page_reverse        | Boolean         | No              | Specifies the page direction. The value can be **True** or **False**.                                                                                                                                                  |
-   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter           | Mandatory       | Type            | Description                                                                                                                                                                                                                        |
+   +=====================+=================+=================+====================================================================================================================================================================================================================================+
+   | id                  | No              | String          | Specifies the floating IP address ID.                                                                                                                                                                                              |
+   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | floating_ip_address | No              | String          | Specifies the floating IPv4 address.                                                                                                                                                                                               |
+   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | floating_network_id | No              | String          | Specifies the external network ID.                                                                                                                                                                                                 |
+   |                     |                 |                 |                                                                                                                                                                                                                                    |
+   |                     |                 |                 | You can only use fixed external network.                                                                                                                                                                                           |
+   |                     |                 |                 |                                                                                                                                                                                                                                    |
+   |                     |                 |                 | You can use **GET /v2.0/networks?router:external=True** or                                                                                                                                                                         |
+   |                     |                 |                 |                                                                                                                                                                                                                                    |
+   |                     |                 |                 | **GET /v2.0/networks?name={floating_network}** or run the **neutron net-external-list** command to obtain information about the external network.                                                                                  |
+   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | router_id           | No              | String          | Specifies the ID of the belonged router.                                                                                                                                                                                           |
+   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | port_id             | No              | String          | Specifies the port ID.                                                                                                                                                                                                             |
+   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | fixed_ip_address    | No              | String          | Specifies the private IP address of the associated port.                                                                                                                                                                           |
+   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | tenant_id           | No              | String          | Specifies the project ID.                                                                                                                                                                                                          |
+   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | limit               | No              | Integer         | Specifies the number of records that will be returned on each page. The value is from 0 to intmax (2^31-1). The default value is 2000.                                                                                             |
+   |                     |                 |                 |                                                                                                                                                                                                                                    |
+   |                     |                 |                 | **limit** can be used together with **marker**. For details, see the parameter description of **marker**.                                                                                                                          |
+   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | marker              | No              | String          | Specifies a resource ID for pagination query, indicating that the query starts from the next record of the specified resource ID.                                                                                                  |
+   |                     |                 |                 |                                                                                                                                                                                                                                    |
+   |                     |                 |                 | This parameter can work together with the parameter **limit**.                                                                                                                                                                     |
+   |                     |                 |                 |                                                                                                                                                                                                                                    |
+   |                     |                 |                 | -  If parameters **marker** and **limit** are not passed, resource records on the first page will be returned.                                                                                                                     |
+   |                     |                 |                 | -  If the parameter **marker** is not passed and the value of parameter **limit** is set to **10**, the first 10 resource records will be returned.                                                                                |
+   |                     |                 |                 | -  If the value of the parameter **marker** is set to the resource ID of the 10th record and the value of parameter **limit** is set to **10**, the 11th to 20th resource records will be returned.                                |
+   |                     |                 |                 | -  If the value of the parameter **marker** is set to the resource ID of the 10th record and the parameter **limit** is not passed, 11th to 2,000th resource records will be returned. The default value of **limit** is **2000**. |
+   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | page_reverse        | No              | Boolean         | Specifies the page direction. The value can be **True** or **False**.                                                                                                                                                              |
+   +---------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Example:
 
@@ -126,35 +126,45 @@ Response Message
    |                       |                       | Format: *yyyy-MM-ddTHH:mm:ss*                                                                  |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------+
 
-Example:
---------
-
-Example request
+Example Request
+---------------
 
 .. code-block:: text
 
    GET https://{Endpoint}/v2.0/floatingips?limit=1
 
-Example response
+Example Response
+----------------
+
+**Status code: 200**
+
+Normal response to the GET operation
 
 .. code-block::
 
    {
-       "floatingips": [
-           {
-               "id": "1a3a2818-d9b4-4a9c-8a19-5252c499d1cd",
-               "status": "DOWN",
-               "router_id": null,
-               "tenant_id": "bbfe8c41dd034a07bebd592bf03b4b0c",
-               "project_id": "bbfe8c41dd034a07bebd592bf03b4b0c",
-               "floating_network_id": "0a2228f2-7f8a-45f1-8e09-9039e1d09975",
-               "fixed_ip_address": null,
-               "floating_ip_address": "99.99.99.84",
-               "port_id": null,
-               "created_at": "2017-10-19T12:21:28",
-               "updated_at": "2018-07-30T12:52:13"
-           }
-       ]
+     "floatingips" : [ {
+       "id" : "1a3a2818-d9b4-4a9c-8a19-5252c499d1cd",
+       "status" : "DOWN",
+       "router_id" : null,
+       "tenant_id" : "bbfe8c41dd034a07bebd592bf03b4b0c",
+       "project_id" : "bbfe8c41dd034a07bebd592bf03b4b0c",
+       "floating_network_id" : "0a2228f2-7f8a-45f1-8e09-9039e1d09975",
+       "fixed_ip_address" : null,
+       "floating_ip_address" : "99.99.99.84",
+       "port_id" : null,
+
+
+       "created_at" : "2017-10-19T12:21:28",
+       "updated_at" : "2018-07-30T12:52:13"
+     } ],
+     "floatingips_links" : [ {
+       "href" : "https://network.region.cn-test-2.clouds.com/v2.0/floatingips.json?limit=2000&marker=000a6144-5010-46f2-bf06-6a1c94477ea3&page_reverse=true",
+       "rel" : "previous"
+     }, {
+       "href" : "https://network.region.cn-test-2.clouds.com/v2.0/floatingips.json?limit=2000&marker=d445e537-bc81-4039-9c7b-f9c1f5c73c78",
+       "rel" : "next"
+     } ]
    }
 
 Status Code

@@ -26,7 +26,7 @@ DELETE /v2.0/fwaas/firewall_rules/{firewall_rule_id}
 .. table:: **Table 1** Parameter description
 
    +------------------+-----------+--------+------------------------------------------------------------------------------+
-   | Name             | Mandatory | Type   | Description                                                                  |
+   | Parameter        | Mandatory | Type   | Description                                                                  |
    +==================+===========+========+==============================================================================+
    | firewall_rule_id | Yes       | String | Specifies the firewall rule ID, which uniquely identifies the firewall rule. |
    +------------------+-----------+--------+------------------------------------------------------------------------------+

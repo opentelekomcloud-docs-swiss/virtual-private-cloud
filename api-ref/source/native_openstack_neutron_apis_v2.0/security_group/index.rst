@@ -12,7 +12,7 @@ Security Group
 -  :ref:`Deleting a Security Group <vpc_sg02_0005>`
 -  :ref:`Querying Security Group Rules <vpc_sg02_0006>`
 -  :ref:`Querying a Security Group Rule <vpc_sg02_0007>`
--  :ref:`Creating a Security Group Rule <vpc_sg02_0008>`
+-  :ref:`Adding a Security Group Rule <vpc_sg02_0008>`
 -  :ref:`Deleting a Security Group Rule <vpc_sg02_0009>`
 
 .. toctree::
@@ -26,5 +26,5 @@ Security Group
    deleting_a_security_group
    querying_security_group_rules
    querying_a_security_group_rule
-   creating_a_security_group_rule
+   adding_a_security_group_rule
    deleting_a_security_group_rule

@@ -9,7 +9,7 @@ VPC APIs include both native OpenStack APIs and extension APIs.
 
 A combination of these two types of APIs allows you to use all functions provided by the VPC service. If a function involves both native OpenStack APIs and extension VPC APIs, use extension VPC APIs preferentially.
 
-.. table:: **Table 1** VPC APIs
+.. table:: **Table 1** API description
 
    +-----------------------+--------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
    | Type                  | Subtype                                          | Description                                                                                                                                         |

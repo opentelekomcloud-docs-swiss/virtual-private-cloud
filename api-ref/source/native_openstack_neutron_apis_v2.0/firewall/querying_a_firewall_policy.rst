@@ -22,7 +22,7 @@ GET /v2.0/fwaas/firewall_policies/{firewall_policy_id}
 .. table:: **Table 1** Parameter description
 
    +--------------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | Name               | Mandatory | Type   | Description                                                                                                                              |
+   | Parameter          | Mandatory | Type   | Description                                                                                                                              |
    +====================+===========+========+==========================================================================================================================================+
    | firewall_policy_id | Yes       | String | Specifies the firewall policy ID, which uniquely identifies the firewall policy. The **firewall_policy_id** value is used as the filter. |
    +--------------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------+
