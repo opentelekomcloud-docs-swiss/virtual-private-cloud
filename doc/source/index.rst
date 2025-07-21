@@ -12,3 +12,8 @@ The Virtual Private Cloud (VPC) service enables you to provision logically isola
       :cloud_environment: swiss
       :umn: This document describes Virtual Private Cloud service, helping you quickly create and properly use the service.
       :api-ref: This document describes application programming interfaces (APIs) of Virtual Private Cloud (VPC) and provides API parameter description and example values.
+
+   .. service_card_link::
+      :title: Best Practices
+      :url: https://arch.otc-service.com/docs/best-practices/networking/virtual-private-cloud
+      :description: Discover our best practices for optimizing cloud-based solutions, focusing on architectural principles that ensure reliability, scalability, security, high availability, and fault tolerance in the Open Telekom Cloud Architecture Center.
