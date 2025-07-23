@@ -10,7 +10,7 @@ Scenarios
 
 Information about all subnets under your account can be exported as an Excel file to a local directory.
 
-This file records the name, ID, VPC, IPv4 CIDR block, IPv6 CIDR block, status, firewall, route table type and associated route table of each subnet.
+This file records the name, ID, VPC, IPv4 CIDR block, IPv6 CIDR block, status, firewall, route table type, and associated route table of each subnet.
 
 Procedure
 ---------

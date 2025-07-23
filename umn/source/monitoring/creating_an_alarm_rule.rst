@@ -19,17 +19,17 @@ Procedure
 
 3. In the upper left corner of the page, click |image2| to open the service list and choose **Management & Deployment** > **Cloud Eye**.
 
-4. In the left navigation pane on the left, choose **Alarm Management** > **Alarm Rules**.
+4. In the navigation pane on the left, choose **Alarm Management** > **Alarm Rules**.
 
-5. On the **Alarm Rules** page, click **Create Alarm Rule** and set required parameters, or modify an existing alarm rule.
+5. On the **Alarm Rules** page, click **Create Alarm Rule** or modify an existing alarm rule.
 
 
    .. figure:: /_static/images/en-us_image_0000001865898552.png
-      :alt: **Figure 1** Create an alarm rule
+      :alt: **Figure 1** Creating an alarm rule
 
-      **Figure 1** Create an alarm rule
+      **Figure 1** Creating an alarm rule
 
-6. After the parameters are set, click **Create**.
+6. Configure the parameters and click **Create**.
 
    After the alarm rule is created, the system automatically notifies you if an alarm is triggered for the VPC service.
 

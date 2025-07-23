@@ -67,36 +67,38 @@ Procedure
 
    .. table:: **Table 1** Inbound rule parameter description
 
-      +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-      | Parameter             | Description                                                                                                                                                 | Example Value         |
-      +=======================+=============================================================================================================================================================+=======================+
-      | Type                  | Source IP address version. You can select:                                                                                                                  | IPv4                  |
-      |                       |                                                                                                                                                             |                       |
-      |                       | -  IPv4                                                                                                                                                     |                       |
-      |                       | -  IPv6                                                                                                                                                     |                       |
-      +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-      | Protocol              | The network protocol used to match traffic in a security group rule.                                                                                        | TCP                   |
-      |                       |                                                                                                                                                             |                       |
-      |                       | Currently, the value can be **All**, **TCP**, **UDP**, **ICMP**, or more.                                                                                   |                       |
-      +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-      | Port                  | Destination port used to match traffic in a security group rule. The value can be from 1 to 65535.                                                          | 22, or 22-30          |
-      |                       |                                                                                                                                                             |                       |
-      |                       | Inbound rules control incoming traffic over specific ports to instances in the security group.                                                              |                       |
-      +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-      | Source                | Source of the security group rule. The value can be an IP address or a security group to allow access from IP addresses or instances in the security group. | 0.0.0.0/0             |
-      |                       |                                                                                                                                                             |                       |
-      |                       | -  IP address:                                                                                                                                              |                       |
-      |                       |                                                                                                                                                             |                       |
-      |                       |    -  Single IP address: 192.168.10.10/32                                                                                                                   |                       |
-      |                       |    -  All IP addresses: 0.0.0.0/0                                                                                                                           |                       |
-      |                       |    -  IP address range: 192.168.1.0/24                                                                                                                      |                       |
-      |                       |                                                                                                                                                             |                       |
-      |                       | If the source is a security group, this rule will apply to all instances associated with the selected security group.                                       |                       |
-      +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-      | Description           | Supplementary information about the security group rule. This parameter is optional.                                                                        | N/A                   |
-      |                       |                                                                                                                                                             |                       |
-      |                       | The security group rule description can contain a maximum of 255 characters and cannot contain angle brackets (< or >).                                     |                       |
-      +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+      +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+      | Parameter             | Description                                                                                                                                                  | Example Value         |
+      +=======================+==============================================================================================================================================================+=======================+
+      | Type                  | Source IP address version. You can select:                                                                                                                   | IPv4                  |
+      |                       |                                                                                                                                                              |                       |
+      |                       | -  **IPv4**                                                                                                                                                  |                       |
+      |                       | -  **IPv6**                                                                                                                                                  |                       |
+      +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+      | Protocol & Port       | The network protocol and port used to match traffic in a security group rule.                                                                                | Protocol: TCP         |
+      |                       |                                                                                                                                                              |                       |
+      |                       | -  The network protocol used to match traffic in a security group rule.                                                                                      | Port: 22, 22-30       |
+      |                       |                                                                                                                                                              |                       |
+      |                       |    Currently, the value can be **All**, **TCP**, **UDP**, **ICMP**, or more.                                                                                 |                       |
+      |                       |                                                                                                                                                              |                       |
+      |                       | -  Destination port used to match traffic in a security group rule. The value can be from 1 to 65535.                                                        |                       |
+      |                       |                                                                                                                                                              |                       |
+      |                       |    Inbound rules control incoming traffic over specific ports to instances in the security group.                                                            |                       |
+      +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+      | Source                | Source of the security group rule. The value can be an IP address or a security group, to allow access from IP addresses or instances in the security group. | 192.168.0.0/24        |
+      |                       |                                                                                                                                                              |                       |
+      |                       | -  IP address                                                                                                                                                |                       |
+      |                       |                                                                                                                                                              |                       |
+      |                       |    -  Single IP address: 192.168.10.10/32                                                                                                                    |                       |
+      |                       |    -  All IP addresses: 0.0.0.0/0                                                                                                                            |                       |
+      |                       |    -  IP address range: 192.168.1.0/24                                                                                                                       |                       |
+      |                       |                                                                                                                                                              |                       |
+      |                       | If the source is a security group, this rule will apply to all instances associated with the selected security group.                                        |                       |
+      +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+      | Description           | Supplementary information about the security group rule. This parameter is optional.                                                                         | ``-``                 |
+      |                       |                                                                                                                                                              |                       |
+      |                       | The security group rule description can contain a maximum of 255 characters and cannot contain angle brackets (< or >).                                      |                       |
+      +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
 #. Click **OK**.
 
@@ -123,16 +125,18 @@ Procedure
       +=======================+================================================================================================================================================================+=======================+
       | Type                  | Destination IP address version. You can select:                                                                                                                | IPv4                  |
       |                       |                                                                                                                                                                |                       |
-      |                       | -  IPv4                                                                                                                                                        |                       |
-      |                       | -  IPv6                                                                                                                                                        |                       |
+      |                       | -  **IPv4**                                                                                                                                                    |                       |
+      |                       | -  **IPv6**                                                                                                                                                    |                       |
       +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-      | Protocol              | The network protocol used to match traffic in a security group rule.                                                                                           | TCP                   |
+      | Protocol & Port       | The network protocol and port used to match traffic in a security group rule.                                                                                  | Protocol: TCP         |
       |                       |                                                                                                                                                                |                       |
-      |                       | Currently, the value can be **All**, **TCP**, **UDP**, **ICMP**, or more.                                                                                      |                       |
-      +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-      | Port                  | Destination port used to match traffic in a security group rule. The value can be from 1 to 65535.                                                             | 22, or 22-30          |
+      |                       | -  The network protocol used to match traffic in a security group rule.                                                                                        | 22, 22-30             |
       |                       |                                                                                                                                                                |                       |
-      |                       | Outbound rules control outgoing traffic over specific ports from instances in the security group.                                                              |                       |
+      |                       |    Currently, the value can be **All**, **TCP**, **UDP**, **ICMP**, or more.                                                                                   |                       |
+      |                       |                                                                                                                                                                |                       |
+      |                       | -  Destination port used to match traffic in a security group rule. The value can be from 1 to 65535.                                                          |                       |
+      |                       |                                                                                                                                                                |                       |
+      |                       |    Outbound rules control outgoing traffic over specific ports from instances in the security group.                                                           |                       |
       +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
       | Destination           | Destination of the security group rule. The value can be an IP address or a security group to allow access to IP addresses or instances in the security group. | 0.0.0.0/0             |
       |                       |                                                                                                                                                                |                       |

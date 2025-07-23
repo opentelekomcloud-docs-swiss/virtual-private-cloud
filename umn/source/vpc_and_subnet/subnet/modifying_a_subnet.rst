@@ -8,7 +8,7 @@ Modifying a Subnet
 Scenarios
 ---------
 
-Modify the subnet name, NTP server address, and DNS server address.
+This section describes how to modify the subnet name, NTP server address, and DNS server address.
 
 Procedure
 ---------

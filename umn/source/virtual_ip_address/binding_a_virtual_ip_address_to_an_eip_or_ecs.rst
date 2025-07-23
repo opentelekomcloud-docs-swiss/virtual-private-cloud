@@ -51,14 +51,14 @@ Binding a Virtual IP Address to an EIP or ECS on the Console
 
    .. note::
 
-      -  If an ECS has multiple NICs, bind the virtual IP address to the primary NIC.
-      -  An ECS NIC can have multiple virtual IP addresses bound.
+      -  If an ECS has multiple network interfaces, bind the virtual IP address to the primary network interface.
+      -  The network interface of an ECS can have multiple virtual IP addresses bound.
 
 #. Click **OK**.
 
    .. important::
 
-      After a virtual IP address is bound to an ECS NIC, you need to manually configure the virtual IP address on the ECS. For details, see :ref:`Configuring a Virtual IP Address for an ECS <en-us_topic_0067802474__section480517024620>`.
+      After a virtual IP address is bound to the network interface of an ECS, you need to manually configure the virtual IP address on the ECS. For details, see :ref:`Configuring a Virtual IP Address for an ECS <en-us_topic_0067802474__section480517024620>`.
 
 .. _en-us_topic_0067802474__section480517024620:
 
@@ -76,7 +76,7 @@ The following OSs are used as examples here. For other OSs, see the help documen
 
 #. .. _en-us_topic_0067802474__li528316578916:
 
-   Obtain the NIC that the virtual IP address is to be bound and the connection of the NIC:
+   Obtain the network interface that the virtual IP address is to be bound and the connection of the network interface:
 
    **nmcli connection**
 
@@ -86,19 +86,19 @@ The following OSs are used as examples here. For other OSs, see the help documen
 
    The command output in this example is described as follows:
 
-   -  **eth0** in the **DEVICE** column indicates the NIC that the virtual IP address is to be bound.
-   -  **Wired connection 1** in the **NAME** column indicates the connection of the NIC.
+   -  **eth0** in the **DEVICE** column indicates the network interface that the virtual IP address is to be bound.
+   -  **Wired connection 1** in the **NAME** column indicates the connection of the network interface.
 
 #. .. _en-us_topic_0067802474__li20283257695:
 
    Add the virtual IP address for the connection:
 
-   **nmcli connection modify "**\ *Connection name of the NIC*\ **"** **+ipv4.addresses** *Virtual IP address*
+   **nmcli connection modify "**\ *<connection-name-of-the-network-interface>*\ **"** **+ipv4.addresses** *<virtual-IP-address>*
 
    Configure the parameters as follows:
 
-   -  *Connection name of the NIC*: The connection name of the NIC obtained in :ref:`1 <en-us_topic_0067802474__li528316578916>`. In this example, the connection name is **Wired connection 1**.
-   -  *Virtual IP address*: Enter the virtual IP address to be added. If you add multiple virtual IP addresses at a time, separate every two with a comma (,).
+   -  *connection-name-of-the-network-interface*: The connection name of the network interface obtained in :ref:`1 <en-us_topic_0067802474__li528316578916>`. In this example, the connection name is **Wired connection 1**.
+   -  *virtual-IP-address*: Enter the virtual IP address to be added. If you add multiple virtual IP addresses at a time, separate every two with a comma (,).
 
    Example commands:
 
@@ -109,7 +109,7 @@ The following OSs are used as examples here. For other OSs, see the help documen
 
    Make the configuration in :ref:`2 <en-us_topic_0067802474__li20283257695>` take effect:
 
-   **nmcli connection up "**\ *Connection name of the NIC*\ **"**
+   **nmcli connection up "**\ *<connection-name-of-the-network-interface>*\ **"**
 
    In this example, run the following command:
 
@@ -123,7 +123,7 @@ The following OSs are used as examples here. For other OSs, see the help documen
 
    **ip a**
 
-   Information similar to the following is displayed. In the command output, the virtual IP address 172.16.0.125 is bound to NIC eth0.
+   Information similar to the following is displayed. In the command output, the virtual IP address 172.16.0.125, is bound to network interface eth0.
 
    |image5|
 
@@ -131,9 +131,9 @@ The following OSs are used as examples here. For other OSs, see the help documen
 
       To delete an added virtual IP address, perform the following steps:
 
-      a. Delete the virtual IP address from the connection of the NIC:
+      a. Delete the virtual IP address from the connection of the network interface:
 
-         **nmcli connection modify "**\ *Connection name of the NIC*\ **"** **-ipv4.addresses** *Virtual IP address*
+         **nmcli connection modify "**\ *<connection-name-of-the-network-interface>*\ **"** **-ipv4.addresses** *<virtual-IP-address>*
 
          To delete multiple virtual IP addresses at a time, separate every two with a comma (,). Example commands are as follows:
 
@@ -146,11 +146,11 @@ The following OSs are used as examples here. For other OSs, see the help documen
 
 For Ubuntu 22 or Ubuntu 20 ECSs, perform the following operations:
 
-#. Obtain the NIC that the virtual IP address is to be bound:
+#. Obtain the network interface that the virtual IP address is to be bound:
 
    **ifconfig**
 
-   Information similar to the following is displayed. In this example, the NIC bound to the virtual IP address is **eth0**.
+   Information similar to the following is displayed. In this example, the network interface bound to the virtual IP address is **eth0**.
 
    .. code-block::
 
@@ -171,7 +171,7 @@ For Ubuntu 22 or Ubuntu 20 ECSs, perform the following operations:
 
 #. .. _en-us_topic_0067802474__li1244016171484:
 
-   Add a virtual IP address to the NIC.
+   Add a virtual IP address to the network interface.
 
    a. Open the configuration file **01-netcfg.yaml**:
 
@@ -179,7 +179,7 @@ For Ubuntu 22 or Ubuntu 20 ECSs, perform the following operations:
 
    b. Press **i** to enter the editing mode.
 
-   c. In the NIC configuration area, add a virtual IP address.
+   c. In the network interface configuration area, add a virtual IP address.
 
       In this example, add a virtual IP address for **eth0**:
 
@@ -220,7 +220,7 @@ For Ubuntu 22 or Ubuntu 20 ECSs, perform the following operations:
 
    **ip a**
 
-   Information similar to the following is displayed. In the command output, the virtual IP address 172.16.0.26 is bound to NIC eth0.
+   Information similar to the following is displayed. In the command output, virtual IP address 172.16.0.26 is bound to network interface eth0.
 
    .. code-block::
 
@@ -241,7 +241,7 @@ For Ubuntu 22 or Ubuntu 20 ECSs, perform the following operations:
 
       To delete an added virtual IP address, perform the following steps:
 
-      a. Open the configuration file **01-netcfg.yaml** and delete the virtual IP address of the corresponding NIC by referring to :ref:`3 <en-us_topic_0067802474__li1244016171484>`.
+      a. Open the configuration file **01-netcfg.yaml** and delete the virtual IP address of the corresponding network interface by referring to :ref:`3 <en-us_topic_0067802474__li1244016171484>`.
       b. Make the deletion take effect by referring to :ref:`4 <en-us_topic_0067802474__li1071922334218>`.
 
 **Windows OS** **(Windows Server is used as an example here.)**
@@ -280,7 +280,7 @@ For Ubuntu 22 or Ubuntu 20 ECSs, perform the following operations:
 
    **ipconfig /all**
 
-   In the command output, **IPv4 Address** is the virtual IP address 10.0.0.154, indicating that the virtual IP address of the ECS NIC has been correctly configured.
+   In the command output, **IPv4 Address** is the virtual IP address 10.0.0.154, indicating that the virtual IP address of the ECS's network interface has been correctly configured.
 
 .. |image1| image:: /_static/images/en-us_image_0000001818982734.png
 .. |image2| image:: /_static/images/en-us_image_0000001865582673.png

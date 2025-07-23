@@ -37,7 +37,7 @@ Procedure
 
 #. On the **Summary** page, view the resources in the subnet.
 
-   a. In the **VPC Resources** area, view the quantities of resources, such as ECSs, BMSs, network interfaces, and load balancers, in the subnet. Click the resource quantity with a hyperlink to view the resources in the subnet.
+   a. In the **Resources** area, view the quantities of resources, such as ECSs, BMSs, and load balancers, in the subnet. Click the resource quantity with a hyperlink to view the resources in the subnet.
    b. In the **Networking Components** area on the right of the page, view the NAT gateways in the subnet.
 
 #. Delete resources from the subnet.
@@ -61,7 +61,7 @@ Procedure
       |                                   |                                                                                                                                                  |
       |                                   |    The BMS details page is displayed.                                                                                                            |
       |                                   |                                                                                                                                                  |
-      |                                   | b. In the **NICs** tab, view the subnet associated with the BMS.                                                                                 |
+      |                                   | b. In the **Network Interfaces** tab, view the subnet associated with the BMS.                                                                   |
       +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
       | Load balancer                     | You can directly switch to load balancers from the subnet details page.                                                                          |
       |                                   |                                                                                                                                                  |

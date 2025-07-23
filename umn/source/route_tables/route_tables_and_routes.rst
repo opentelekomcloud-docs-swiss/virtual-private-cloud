@@ -34,7 +34,7 @@ You can add routes to default and custom route tables and configure the destinat
 
 -  System routes: These routes are automatically added by the system and cannot be modified or deleted.
 
-   After a route table is created, the system automatically adds the following system routes to the route table, so that instances in a VPC can communicate with each other.
+   Each route table comes with the following system routes, so that instances in a VPC can communicate with each other.
 
    -  Routes whose destination is 100.64.0.0/10 or 198.19.128.0/20.
 
@@ -49,15 +49,15 @@ You can add routes to default and custom route tables and configure the destinat
 
          In addition to the preceding system routes, the system automatically adds a route whose destination is 127.0.0.0/8. This is the local loopback address.
 
--  Custom routes: These are routes that you can add, modify, and delete. The destination of a custom route cannot overlap with that of a system route.
+-  Custom routes: Routes that can be added, modified, and deleted. The destination of a custom route cannot overlap with that of a system route.
 
-   You can add a custom route and configure the destination, next hop type, and next hop in the route to determine where network traffic is directed. :ref:`Table 1 <vpc_route01_0001__en-us_topic_0118498988_en-us_topic_0121831807_table1727714140542>` lists the supported types of next hops.
+   You can add a custom route and configure the destination type, destination, next hop type, and next hop in the route to determine where network traffic is directed. :ref:`Table 1 <vpc_route01_0001__en-us_topic_0118498988_en-us_topic_0121831807_table1727714140542>` lists the supported types of next hops.
 
-   You cannot add two routes with the same destination to a VPC route table even if their next hop types are different. The route priority depends on the destination. According to the longest match routing rule, the destination with a higher matching degree is preferentially selected for packet forwarding.
+   You cannot add two routes with the same destination to a VPC route table even if their next hop types are different, because the destination determines the route priority. According to the longest match routing rule, the destination with a higher matching degree is preferentially selected for packet forwarding.
 
    .. _vpc_route01_0001__en-us_topic_0118498988_en-us_topic_0121831807_table1727714140542:
 
-   .. table:: **Table 1** Next hop type
+   .. table:: **Table 1** Next hop types
 
       +------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
       | Next Hop Type          | Description                                                                                                                                                  | Supported Route Table  |
@@ -65,10 +65,10 @@ You can add routes to default and custom route tables and configure the destinat
       | Server                 | Traffic intended for the destination is forwarded to an ECS in the VPC.                                                                                      | -  Default route table |
       |                        |                                                                                                                                                              | -  Custom route table  |
       +------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-      | Extension NIC          | Traffic intended for the destination is forwarded to the extension NIC of an ECS in the VPC.                                                                 | -  Default route table |
+      | Extension NIC          | Traffic intended for the destination is forwarded to the extended network interface of an ECS in the VPC.                                                    | -  Default route table |
       |                        |                                                                                                                                                              | -  Custom route table  |
       +------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-      | VPN connection         | Traffic intended for the destination is forwarded to a VPN gateway.                                                                                          | Custom route table     |
+      | VPN connection         | Traffic intended for the destination is forwarded to a VPN connection.                                                                                       | Custom route table     |
       +------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
       | Direct Connect gateway | Traffic intended for the destination is forwarded to a Direct Connect gateway.                                                                               | Custom route table     |
       +------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+

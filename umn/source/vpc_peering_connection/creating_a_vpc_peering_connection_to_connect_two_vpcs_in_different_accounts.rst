@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0046655038:
 
-Creating a VPC Peering Connection with a VPC in Another Account
-===============================================================
+Creating a VPC Peering Connection to Connect Two VPCs in Different Accounts
+===========================================================================
 
 Scenarios
 ---------
@@ -36,7 +36,7 @@ Notes and Constraints
 
 -  If the local and peer VPCs have overlapping CIDR blocks, the VPC peering connection may not take effect.
 
--  For a VPC peering connection between VPCs in different accounts:
+-  For a VPC peering connection between VPCs under different accounts:
 
    -  If account A initiates a request to create a VPC peering connection with a VPC in account B, the VPC peering connection takes effect only after account B accepts the request.
    -  To ensure network security, do not accept VPC peering connections from unknown accounts.
@@ -44,7 +44,7 @@ Notes and Constraints
 Prerequisites
 -------------
 
-You have two VPCs in the same region, but they are from different accounts. If you want to create one, see :ref:`Creating a VPC <en-us_topic_0013935842>`.
+You have two VPCs in the same region, but they are from different accounts. If you want to create one, see :ref:`Creating a VPC with a Subnet <en-us_topic_0013935842>`.
 
 .. _en-us_topic_0046655038__section14616192294815:
 
@@ -252,7 +252,7 @@ After you add routes for the VPC peering connection, verify the communication be
    .. important::
 
       -  In this example, ECS-A01 and RDS-B01 are in the same security group. If the instances in different security groups, you need to add inbound rules to allow access from the peer security group. For details, see :ref:`Enabling ECSs In Different Security Groups to Communicate Through an Internal Network <en-us_topic_0081124350__section094514632817>`.
-      -  If VPCs connected by a VPC peering connection cannot communicate with each other, refer to :ref:`Why Did Communication Fail Between VPCs That Were Connected by a VPC Peering Connection? <vpc_faq_0069>`.
+      -  If VPCs connected by a VPC peering connection cannot communicate with each other, refer to :ref:`Why Did Communication Fail Between VPCs That Were Connected by a VPC Peering Connection? <vpc_faq_0069>`
 
 .. |image1| image:: /_static/images/en-us_image_0000001818982734.png
 .. |image2| image:: /_static/images/en-us_image_0000001865583133.png

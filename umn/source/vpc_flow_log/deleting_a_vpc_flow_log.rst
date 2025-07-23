@@ -12,7 +12,7 @@ Delete a VPC flow log that is not required. Deleting a VPC flow log will not del
 
 .. note::
 
-   If a NIC that uses a VPC flow log is deleted, the flow log will be automatically deleted. However, the flow log records are not deleted.
+   If a network interface that uses a VPC flow log is deleted, the flow log will be automatically deleted. However, the flow log records are not deleted.
 
 Procedure
 ---------

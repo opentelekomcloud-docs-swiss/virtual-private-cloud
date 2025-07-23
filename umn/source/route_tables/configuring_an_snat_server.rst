@@ -17,7 +17,7 @@ Prerequisites
 
 -  You have an ECS where SNAT is to be configured.
 -  The ECS where SNAT is to be configured runs Linux.
--  The ECS where SNAT is to be configured has only one network interface card (NIC).
+-  The ECS where SNAT is to be configured has only one network interface.
 
 Procedure
 ---------
@@ -30,9 +30,9 @@ Procedure
 
 #. On the displayed page, locate the target ECS in the ECS list and click the ECS name to switch to the page showing ECS details.
 
-#. On the displayed ECS details page, click the **NICs** tab.
+#. On the displayed ECS details page, click the **Network Interfaces** tab.
 
-#. In the displayed area showing the NIC IP address details, disable **Source/Destination Check**.
+#. Click the network interface's IP address to view details and disable **Source/Destination Check**.
 
    By default, the source/destination check is enabled. When this check is enabled, the system checks whether source IP addresses contained in the packets sent by ECSs are correct. If the IP addresses are incorrect, the system does not allow the ECSs to send the packets. This mechanism prevents packet spoofing, thereby improving system security. If the SNAT function is used, the SNAT server needs to forward packets. This mechanism prevents the packet sender from receiving returned packets. Therefore, you need to disable the source/destination check for SNAT servers.
 

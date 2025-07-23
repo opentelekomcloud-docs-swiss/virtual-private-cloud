@@ -32,7 +32,7 @@ Linux
 
    Use either of the following methods to modify the configuration file:
 
-   -  Method 1: Use the vi editor to open the **/etc/sysctl.conf** file, change the value of **net.ipv4.ip_forward** to **0**, and enter **:wq** to save the change and exit.
+   -  Method 1: Use the vi editor to open the **/etc/sysctl.conf** file, change the value of **net.ipv4.ip_forward** to **0**, enter **:wq** to save the change, and exit.
 
    -  Method 2: Use the **sed** command. An example command is as follows:
 

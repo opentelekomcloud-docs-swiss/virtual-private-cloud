@@ -34,7 +34,7 @@ Security Group Basics
 Security Group Rules
 --------------------
 
-A security group has inbound and outbound rules to control traffic that's allowed to reach or leave the instances associated with the security group. You can specify protocol, port, source/destination for a security group rule. :ref:`Table 1 <en-us_topic_0073379079__table1919155115499>` describes key information about a security group rule.
+A security group has inbound and outbound rules to control traffic that is allowed to reach or leave the instances associated with the security group. You can specify protocol, port, source/destination for a security group rule. :ref:`Table 1 <en-us_topic_0073379079__table1919155115499>` describes key information about a security group rule.
 
 .. _en-us_topic_0073379079__table1919155115499:
 
@@ -43,12 +43,10 @@ A security group has inbound and outbound rules to control traffic that's allowe
    +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter                         | Description                                                                                                                                                                                                                                                      |
    +===================================+==================================================================================================================================================================================================================================================================+
-   | Protocol                          | The network protocol used to match traffic in a security group rule. Currently, the value can be **All**, **TCP**, **UDP**, **ICMP**, or more.                                                                                                                   |
-   +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Port                              | Destination port used to match traffic in a security group rule. The value can be from 1 to 65535.                                                                                                                                                               |
+   | Protocol & Port                   | Network protocol type and port range.                                                                                                                                                                                                                            |
    |                                   |                                                                                                                                                                                                                                                                  |
-   |                                   | -  Inbound rules control incoming traffic over specific ports to instances in the security group.                                                                                                                                                                |
-   |                                   | -  Outbound rules control outgoing traffic over specific ports from instances in the security group.                                                                                                                                                             |
+   |                                   | -  Network protocol: the protocol that is used to match traffic. Currently, the value can be **All**, **TCP**, **UDP**, **ICMP**, or more.                                                                                                                       |
+   |                                   | -  Port range: the destination port that is used to match traffic. The value ranges from 1 to 65535.                                                                                                                                                             |
    +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Source (Inbound)                  | The source in an inbound rule is used to match the IP address or address range of an external request. The source can be:                                                                                                                                        |
    |                                   |                                                                                                                                                                                                                                                                  |
@@ -122,4 +120,4 @@ Security Group Constraints
 --------------------------
 
 -  By default, you can add up to 50 security group rules to a security group.
--  By default, you can add an ECS or extension NIC to up to five security groups. In such a case, the rules of all the selected security groups are aggregated to take effect.
+-  By default, you can add an ECS or extended network interface to up to five security groups. In such a case, the rules of all the selected security groups are aggregated to take effect.

@@ -16,6 +16,7 @@ Virtual Private Cloud - User Guide
    vpc_flow_log/index
    direct_connect
    virtual_ip_address/index
+   interconnecting_with_cts/index
    monitoring/index
    faq/index
    change_history

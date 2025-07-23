@@ -33,7 +33,7 @@ A VPC peering connection can only connect VPCs in the same region.
 
 -  If two VPCs are in the same account, the process of creating a VPC peering connection is shown in :ref:`Figure 2 <en-us_topic_0046655036__en-us_topic_0000001154868962_fig10285152624918>`.
 
-   For details about how to create a VPC peering connection, see :ref:`Creating a VPC Peering Connection with Another VPC in Your Account <en-us_topic_0046655037>`.
+   For details about how to create a VPC peering connection, see :ref:`Creating a VPC Peering Connection to Connect Two VPCs in the Same Account <en-us_topic_0046655037>`.
 
    .. _en-us_topic_0046655036__en-us_topic_0000001154868962_fig10285152624918:
 
@@ -44,7 +44,7 @@ A VPC peering connection can only connect VPCs in the same region.
 
 -  If two VPCs are in different accounts, the process of creating a VPC peering connection is shown in :ref:`Figure 3 <en-us_topic_0046655036__fig16137161191713>`.
 
-   For details about how to create a VPC peering connection, see :ref:`Creating a VPC Peering Connection with a VPC in Another Account <en-us_topic_0046655038>`.
+   For details about how to create a VPC peering connection, see :ref:`Creating a VPC Peering Connection to Connect Two VPCs in Different Accounts <en-us_topic_0046655038>`.
 
    If account A initiates a request to create a VPC peering connection with a VPC in account B, the VPC peering connection takes effect only after account B accepts the request.
 

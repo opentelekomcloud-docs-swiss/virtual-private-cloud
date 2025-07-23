@@ -10,7 +10,7 @@ Scenarios
 
 You can export virtual and private IP addresses in a subnet as an Excel file to a local directory.
 
--  The exported virtual IP address file records the virtual IP addresses, EIPs, and server NICs.
+-  The exported virtual IP address file records the virtual IP addresses, EIPs, and server's network interfaces.
 -  The exported private IP address file records the IPv4 addresses, IPv6 addresses, resource IDs, and usage information.
 
 Procedure
