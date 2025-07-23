@@ -90,12 +90,11 @@ Binding an EIP
 Follow-Up Procedure
 -------------------
 
-After an ECS with an EIP bound is created, the system generates a domain name in the format of **ecs-**\ *xx-xx-xx-xx*\ **.compute.**\ *xxx*\ **.com** for the EIP by default. *xx-xx-xx-xx* indicates the EIP, and xxx indicates the domain name of the cloud service provider. You can use the domain name to access the ECS.
+After an ECS with an EIP bound is created, the system generates a reverse domain name in the format of ecs-xx-xx-xx-xx.compute.xxx.com for the EIP by default. xx-xx-xx-xx indicates the EIP, and xxx indicates the domain name of the cloud service provider. You can use the reverse domain name to access the ECS.
 
-You can use any of the following commands to obtain the domain name of an EIP:
+You can use any of the following commands to obtain the reverse domain name of an EIP:
 
--  ping -an *EIP*
--  nslookup [-qt=ptr] *EIP*
+-  nslookup -query=ptr *EIP*
 -  dig -x *EIP*
 
 .. |image1| image:: /_static/images/en-us_image_0000001818982734.png

@@ -7,8 +7,8 @@ VPC Peering Connection
 
 -  :ref:`VPC Peering Connection Overview <en-us_topic_0046655036>`
 -  :ref:`VPC Peering Connection Usage Examples <en-us_topic_0046809840>`
--  :ref:`Creating a VPC Peering Connection with Another VPC in Your Account <en-us_topic_0046655037>`
--  :ref:`Creating a VPC Peering Connection with a VPC in Another Account <en-us_topic_0046655038>`
+-  :ref:`Creating a VPC Peering Connection to Connect Two VPCs in the Same Account <en-us_topic_0046655037>`
+-  :ref:`Creating a VPC Peering Connection to Connect Two VPCs in Different Accounts <en-us_topic_0046655038>`
 -  :ref:`Obtaining the Peer Project ID of a VPC Peering Connection <vpc_peering_0005>`
 -  :ref:`Modifying a VPC Peering Connection <vpc_peering_0002>`
 -  :ref:`Viewing VPC Peering Connections <vpc_peering_0001>`
@@ -23,8 +23,8 @@ VPC Peering Connection
 
    vpc_peering_connection_overview
    vpc_peering_connection_usage_examples
-   creating_a_vpc_peering_connection_with_another_vpc_in_your_account
-   creating_a_vpc_peering_connection_with_a_vpc_in_another_account
+   creating_a_vpc_peering_connection_to_connect_two_vpcs_in_the_same_account
+   creating_a_vpc_peering_connection_to_connect_two_vpcs_in_different_accounts
    obtaining_the_peer_project_id_of_a_vpc_peering_connection
    modifying_a_vpc_peering_connection
    viewing_vpc_peering_connections

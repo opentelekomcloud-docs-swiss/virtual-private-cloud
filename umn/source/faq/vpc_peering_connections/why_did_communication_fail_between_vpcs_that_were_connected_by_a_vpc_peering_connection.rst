@@ -34,9 +34,9 @@ The issues here are described in order of how likely they are to occur.
    | 3                     | Incorrect network configuration                                                                        | Refer to :ref:`Incorrect Network Configuration <vpc_faq_0069__section157663413717>`.                       |
    |                       |                                                                                                        |                                                                                                            |
    |                       | -  The security group rules of the ECSs that need to communicate deny inbound traffic from each other. |                                                                                                            |
-   |                       | -  The firewall of the ECS NIC blocks traffic.                                                         |                                                                                                            |
+   |                       | -  Check whether the firewall of the ECS's network interface blocks traffic.                           |                                                                                                            |
    |                       | -  The firewall rules of the subnets connected by the VPC peering connection deny inbound traffic.     |                                                                                                            |
-   |                       | -  Check the policy-based routing configuration of an ECS with multiple NICs.                          |                                                                                                            |
+   |                       | -  Check the policy-based route configuration of an ECS with multiple network interfaces.              |                                                                                                            |
    +-----------------------+--------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
    | 4                     | ECS network failure                                                                                    | Refer to :ref:`ECS Network Failure <vpc_faq_0069__section8357923710>`.                                     |
    +-----------------------+--------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
@@ -117,7 +117,7 @@ Incorrect Route Configuration for Local and Peer VPCs
    +==================================================================================================================================================================+==================================================================================================================================================================================+
    | Check whether routes are added to the route tables of the local and peer VPCs.                                                                                   | If routes are not added, add routes by referring to:                                                                                                                             |
    |                                                                                                                                                                  |                                                                                                                                                                                  |
-   |                                                                                                                                                                  | -  :ref:`Creating a VPC Peering Connection with Another VPC in Your Account <en-us_topic_0046655037>`                                                                            |
+   |                                                                                                                                                                  | -  :ref:`Creating a VPC Peering Connection to Connect Two VPCs in the Same Account <en-us_topic_0046655037>`                                                                     |
    +------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Check the destinations of routes added to the route tables of the local and peer VPCs.                                                                           | If the route destination is incorrect, change it.                                                                                                                                |
    |                                                                                                                                                                  |                                                                                                                                                                                  |
@@ -139,7 +139,7 @@ Incorrect Network Configuration
    -  If the ECSs are associated with the same security group, you do not need to check their rules.
    -  If the ECSs are in different security groups, you need to add inbound rules to allow access from the peer security group. For details, see :ref:`Security Group Configuration Examples <en-us_topic_0081124350>`.
 
-#. Check whether the firewall of the ECS NIC blocks traffic.
+#. Check whether the firewall of the ECS's network interface blocks traffic.
 
    If the firewall blocks traffic, configure the firewall to allow inbound traffic.
 
@@ -147,12 +147,12 @@ Incorrect Network Configuration
 
    If the firewall rules deny inbound traffic, configure the rules to allow the traffic.
 
-#. If an ECS has more than one NIC, check whether correct policy-based routing has been configured for the ECS and packets with different source IP addresses match their own routes from each NIC.
+#. If an ECS has more than one network interface, check whether correct policy-based routes have been configured for the ECS and packets with different source IP addresses match their own routes from each network interface.
 
-   If an ECS has two NICs (eth0 and eth1):
+   If an ECS has two network interfaces (eth0 and eth1):
 
-   -  IP address of eth0: 192.168.1.10; Subnet gateway: 192.168.1.1
-   -  IP address of eth1: 192.168.2.10; Subnet gateway: 192.168.2.1
+   -  IP address of eth0: 192.168.1.10; subnet gateway: 192.168.1.1
+   -  IP address of eth1: 192.168.2.10; subnet gateway: 192.168.2.1
 
    Command format:
 
@@ -164,7 +164,7 @@ Incorrect Network Configuration
    -  **ping -I 192.168.1.10 192.168.1.1**
    -  **ping -I 192.168.2.10 192.168.2.1**
 
-   If the network communication is normal, the routes of the NICs are correctly configured.
+   If the network communication is normal, the routes of the network interfaces are correctly configured.
 
 .. _vpc_faq_0069__section8357923710:
 
@@ -172,9 +172,9 @@ ECS Network Failure
 -------------------
 
 #. Log in to the ECS.
-#. Check whether the ECS NIC has an IP address assigned.
+#. Check whether the ECS's network interface has an IP address assigned.
 
-   -  Linux ECS: Use the **ifconfig** or **ip address** command to view the IP address of the NIC.
+   -  Linux ECS: Use the **ifconfig** or **ip address** command to view the IP address of the network interface.
    -  Windows ECS: In the search box, enter **cmd** and press **Enter**. In the displayed command prompt, run the **ipconfig** command.
 
 #. Check whether the subnet gateway of the ECS can be pinged.

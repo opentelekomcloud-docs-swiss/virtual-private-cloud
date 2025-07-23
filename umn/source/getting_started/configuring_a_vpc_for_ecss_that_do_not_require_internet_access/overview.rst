@@ -31,7 +31,7 @@ If your ECSs do not require Internet access or need to access the Internet using
    |                                    |                                                                                                                          |
    |                                    | If the default subnet cannot meet your requirements, you can create one.                                                 |
    |                                    |                                                                                                                          |
-   |                                    | The new subnet is used to assign IP addresses to NICs added to the ECS.                                                  |
+   |                                    | The new subnet is used to assign IP addresses to network interfaces attached to the ECS.                                 |
    +------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
    | Create a security group.           | This task is mandatory.                                                                                                  |
    |                                    |                                                                                                                          |

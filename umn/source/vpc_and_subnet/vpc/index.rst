@@ -5,7 +5,7 @@
 VPC
 ===
 
--  :ref:`Creating a VPC <en-us_topic_0013935842>`
+-  :ref:`Creating a VPC with a Subnet <en-us_topic_0013935842>`
 -  :ref:`Modifying a VPC <en-us_topic_0030969462>`
 -  :ref:`Adding a Secondary IPv4 CIDR Block to a VPC <vpc_vpc_0007>`
 -  :ref:`Deleting a Secondary IPv4 CIDR Block from a VPC <vpc_vpc_0008>`
@@ -19,7 +19,7 @@ VPC
    :maxdepth: 1
    :hidden: 
 
-   creating_a_vpc
+   creating_a_vpc_with_a_subnet
    modifying_a_vpc
    adding_a_secondary_ipv4_cidr_block_to_a_vpc
    deleting_a_secondary_ipv4_cidr_block_from_a_vpc

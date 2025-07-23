@@ -8,7 +8,7 @@ Changing the Security Group of an ECS
 Scenarios
 ---------
 
-Change the security group associated with an ECS NIC.
+Change the security group associated with the network interface of an ECS.
 
 Procedure
 ---------
@@ -29,7 +29,7 @@ Procedure
 
       **Figure 1** Changing a security group
 
-#. Select the target NIC and security groups.
+#. Select the network interfaces and security groups.
 
    You can select multiple security groups. In such a case, the access rules of all the selected security groups apply to the ECS.
 
