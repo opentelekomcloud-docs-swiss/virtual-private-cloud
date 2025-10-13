@@ -49,23 +49,17 @@ Procedure
 
 #. Click |image1| in the upper left corner and select the desired region and project.
 
-#. Click |image2| in the upper left corner and choose > **Virtual Private Cloud**.
+#. Click |image2| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 
-#. In the upper right corner of the VPC list, click **Search by Tag**.
+#. In the search box above the VPC list, click anywhere in the search box.
 
-#. In the displayed area, enter the tag key and value of the VPC you are looking for.
+   Click the tag key and then the value as required. The system filters resources based on the tag you select.
 
-   Both the tag key and value must be specified. The system automatically displays the VPCs you are looking for if both the tag key and value are matched.
-
-#. Click + to add more tag keys and values.
+   Click anywhere in the search box to add the next tag key and value.
 
    You can add multiple tag keys and values to refine your search results. If you add more than one tag to search for VPCs, the VPCs containing all specified tags will be displayed.
-
-#. Click **Search**.
-
-   The system displays the VPCs you are looking for based on the entered tag keys and values.
 
 **Add, delete, edit, and view tags on the Tags tab of a VPC.**
 
@@ -73,7 +67,7 @@ Procedure
 
 #. Click |image3| in the upper left corner and select the desired region and project.
 
-#. Click |image4| in the upper left corner and choose > **Virtual Private Cloud**.
+#. Click |image4| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 

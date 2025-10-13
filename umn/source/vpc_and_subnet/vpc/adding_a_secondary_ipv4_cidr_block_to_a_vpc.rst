@@ -10,6 +10,10 @@ Scenarios
 
 When you create a VPC, you specify a primary IPv4 CIDR block for the VPC, which cannot be changed. To extend the IP address range of your VPC, you can add a secondary CIDR block to the VPC. Five secondary CIDR blocks can be added.
 
+.. note::
+
+   If the :ref:`secondary IPv4 CIDR block <vpc_vpc_0007>` function is available in a region, the CIDR block of a VPC in this region cannot be modified through the console. You can call an API to modify VPC CIDR block by referring to section "Updating VPC Information" in the *Virtual Private Cloud API Reference*.
+
 Notes and Constraints
 ---------------------
 
@@ -30,6 +34,10 @@ Notes and Constraints
       +-----------------------------------+-----------------------------------+
       | Type                              | CIDR Block (Not Supported)        |
       +===================================+===================================+
+      | Reserved private CIDR blocks      | -  172.31.0.0/16                  |
+      |                                   | -  192.168.0.0/16                 |
+      |                                   | -  In-use primary CIDR blocks     |
+      +-----------------------------------+-----------------------------------+
       | Reserved system CIDR blocks       | -  100.64.0.0/10                  |
       |                                   | -  214.0.0.0/7                    |
       |                                   | -  198.18.0.0/15                  |
@@ -48,7 +56,7 @@ Procedure
 
 #. Click |image1| in the upper left corner and select the desired region and project.
 
-#. Click |image2| in the upper left corner and choose > **Virtual Private Cloud**.
+#. Click |image2| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 

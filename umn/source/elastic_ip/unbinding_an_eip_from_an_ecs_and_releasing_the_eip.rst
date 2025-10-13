@@ -13,7 +13,7 @@ If you no longer need an EIP, unbind it from the ECS and release the EIP to avoi
 Notes and Constraints
 ---------------------
 
--  EIPs assigned and bound to load balancers in the ELB service are displayed in the EIP list of the VPC service, but you cannot unbind these EIPs from classic load balancers.
+-  EIP assigned together with your load balancers will also be displayed in the EIP list.
 -  Only EIPs with no instance bound can be released. If you want to release an EIP with an instance bound, you need to unbind EIP from the instance first.
 
 Procedure
@@ -23,7 +23,7 @@ Procedure
 
 #. Log in to the management console.
 #. Click |image1| in the upper left corner and select the desired region and project.
-#. Click |image2| in the upper left corner, and choose > **Elastic IP**.
+#. Click |image2| in the upper left corner, and choose **Network** > **Elastic IP**.
 #. On the displayed page, locate the row that contains the EIP, and click **Unbind**.
 #. Click **OK**.
 
@@ -31,7 +31,7 @@ Procedure
 
 #. Log in to the management console.
 #. Click |image3| in the upper left corner and select the desired region and project.
-#. Click |image4| in the upper left corner, and choose > **Elastic IP**.
+#. Click |image4| in the upper left corner, and choose **Network** > **Elastic IP**.
 #. On the displayed page, locate the row that contains the target EIP, click **More** and then **Release** in the **Operation** column.
 #. Click **OK**.
 
@@ -39,7 +39,7 @@ Procedure
 
 #. Log in to the management console.
 #. Click |image5| in the upper left corner and select the desired region and project.
-#. Click |image6| in the upper left corner, and choose > **Elastic IP**.
+#. Click |image6| in the upper left corner, and choose **Network** > **Elastic IP**.
 #. On the displayed page, select the EIPs to be unbound.
 #. Click the **Unbind** button located above the EIP list.
 #. Click **OK**.
@@ -48,7 +48,7 @@ Procedure
 
 #. Log in to the management console.
 #. Click |image7| in the upper left corner and select the desired region and project.
-#. Click |image8| in the upper left corner, and choose > **Elastic IP**.
+#. Click |image8| in the upper left corner, and choose **Network** > **Elastic IP**.
 #. On the displayed page, select the EIPs to be released.
 #. Click the **Release** button located above the EIP list.
 #. Click **OK**.

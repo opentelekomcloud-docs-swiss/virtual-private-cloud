@@ -19,11 +19,13 @@ Procedure
 
 2. Click |image1| in the upper left corner and select the desired region and project.
 
-3. In the upper left corner of the page, click |image2| to expand the service list and choose > **Virtual Private Cloud**.
+3. In the upper left corner of the page, click |image2| to expand the service list and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 
-4. In the navigation pane on the left, choose **Route Tables**.
+4. In the navigation pane on the left, choose **Virtual Private Cloud** > **Route Tables**.
+
+   The route table list is displayed.
 
 5. Locate the target route table and click its name.
 

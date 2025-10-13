@@ -17,15 +17,20 @@ Procedure
 
 #. Click |image1| in the upper left corner and select the desired region and project.
 
-#. Click |image2| in the upper left corner and choose > **Virtual Private Cloud**.
+#. Click |image2| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 
-#. On the **Virtual Private Cloud** page, locate the VPC containing the subnet where a virtual IP address is to be assigned, and click the VPC name.
+#. In the navigation pane on the left, choose **Virtual Private Cloud** > **Subnets**.
 
-#. On the **Subnets** tab, click the name of the subnet where a virtual IP address is to be assigned.
+#. In the subnet list, click the name of the subnet where a virtual IP address is to be assigned.
 
-#. Click the **Virtual IP Addresses** tab and click **Assign Virtual IP Address**.
+#. Click the **IP Addresses** tab and click **Assign Virtual IP Address**.
+
+#. Select an IP address type. This parameter is available only in regions supporting IPv6.
+
+   -  IPv4
+   -  IPv6
 
 #. Select a virtual IP address assignment mode.
 

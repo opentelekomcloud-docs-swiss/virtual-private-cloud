@@ -22,7 +22,7 @@ Procedure
 
 #. Click |image1| in the upper left corner and select the desired region and project.
 
-#. Click |image2| in the upper left corner and choose > **Elastic IP**.
+#. Click |image2| in the upper left corner and choose **Network** > **Elastic IP**.
 
    The EIP list page is displayed.
 

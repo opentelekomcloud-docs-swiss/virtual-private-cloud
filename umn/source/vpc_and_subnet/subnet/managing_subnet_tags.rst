@@ -49,27 +49,21 @@ Procedure
 
 #. Click |image1| in the upper left corner and select the desired region and project.
 
-#. Click |image2| in the upper left corner and choose > **Virtual Private Cloud**.
+#. Click |image2| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 
-#. In the navigation pane on the left, click **Subnets**.
+#. In the navigation pane on the left, choose **Virtual Private Cloud** > **Subnets**.
 
    The **Subnets** page is displayed.
 
-#. In the upper right corner of the subnet list, click **Search by Tag**.
+#. In the search box above the subnet list, click the search box.
 
-#. Enter the tag key of the subnet to be queried.
+   Click the tag key and then the value as required. The system filters resources based on the tag you select.
 
-   Both the tag key and value must be specified. The system automatically displays the subnets you are looking for if both the tag key and value are matched.
+   Click anywhere in the search box to add the next tag key and value.
 
-#. Click **+** to add another tag key and value.
-
-   You can add multiple tag keys and values to refine your search results. If you add more than one tag to search for subnets, the subnets containing all specified tags will be displayed.
-
-#. Click **Search**.
-
-   The system displays the subnets you are looking for based on the entered tag keys and values.
+   You can add multiple tag keys and values to refine your search results. If you add more than one tag to search for VPCs, the VPCs containing all specified tags will be displayed.
 
 **Add, delete, edit, and view tags on the Tags tab of a subnet.**
 
@@ -77,11 +71,11 @@ Procedure
 
 #. Click |image3| in the upper left corner and select the desired region and project.
 
-#. Click |image4| in the upper left corner and choose > **Virtual Private Cloud**.
+#. Click |image4| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 
-#. In the navigation pane on the left, click **Subnets**.
+#. In the navigation pane on the left, choose **Virtual Private Cloud** > **Subnets**.
 
    The **Subnets** page is displayed.
 

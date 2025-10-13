@@ -12,7 +12,7 @@ You can bind a virtual IP address to ECSs deployed in the active/standby pair, a
 Networking
 ----------
 
-Virtual IP addresses are used for high availability and can work together with Keepalived to make active/standby ECS switchover possible. This way if one ECS goes down for some reason, the other one can take over and services continue uninterrupted. ECSs can be configured for HA or as load balancing clusters.
+Virtual IP addresses are used for high availability and can work together with Keepalived to make active/standby ECS switchover possible. This way if one ECS goes down for some reason, the other one can take over and services continue uninterrupted. This following describes two typical networking modes.
 
 -  **Networking mode 1**: HA
 

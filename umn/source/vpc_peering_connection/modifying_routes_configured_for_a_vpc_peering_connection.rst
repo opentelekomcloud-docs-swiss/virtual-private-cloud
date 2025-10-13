@@ -24,11 +24,11 @@ Modifying Routes of a VPC Peering Connection Between VPCs in the Same Account
 
 #. Click |image1| in the upper left corner and select the desired region and project.
 
-#. Click |image2| in the upper left corner and choose > **Virtual Private Cloud**.
+#. Click |image2| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 
-#. In the navigation pane on the left, click **VPC Peering**.
+#. In the navigation pane on the left, choose **Virtual Private Cloud** > **VPC Peering Connections**.
 
    The VPC peering connection list is displayed.
 
@@ -36,29 +36,13 @@ Modifying Routes of a VPC Peering Connection Between VPCs in the Same Account
 
    The page showing the VPC peering connection details is displayed.
 
-#. Modify the route added to the route table of the local VPC:
+#. In the route list, click the route table hyperlink of the route.
 
-   a. Click the **Local Routes** tab and then click the **Route Tables** hyperlink.
+   The route table details page is displayed.
 
-      The **Summary** tab of the default route table for the local VPC is displayed.
+#. In the route list, locate the route and click **Modify** in the **Operation** column.
 
-   b. Locate the row that contains the route to be modified and click **Modify** in the **Operation** column.
-
-      The **Modify Route** dialog box is displayed.
-
-   c. Modify the route and click **OK**.
-
-#. Modify the route added to the route table of the peer VPC:
-
-   a. Click the **Peer Routes** tab and then click the **Route Tables** hyperlink.
-
-      The **Summary** tab of the default route table for the peer VPC is displayed.
-
-   b. Locate the row that contains the route to be modified and click **Modify** in the **Operation** column.
-
-      The **Modify Route** dialog box is displayed.
-
-   c. Modify the route and click **OK**.
+#. Modify the route and click **OK**.
 
 .. _vpc_peering_0007__section47866392497:
 
@@ -73,11 +57,11 @@ Only the account owner of a VPC can modify the routes added for the connection.
 
    a. Click |image3| in the upper left corner and select the desired region and project.
 
-   b. Click |image4| in the upper left corner and choose > **Virtual Private Cloud**.
+   b. Click |image4| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
       The **Virtual Private Cloud** page is displayed.
 
-   c. In the navigation pane on the left, click **VPC Peering**.
+   c. In the navigation pane on the left, choose **Virtual Private Cloud** > **VPC Peering Connections**.
 
       The VPC peering connection list is displayed.
 
@@ -85,17 +69,13 @@ Only the account owner of a VPC can modify the routes added for the connection.
 
       The page showing the VPC peering connection details is displayed.
 
-   e. Modify the route added to the route table of the local VPC:
+   e. In the route list, click the route table hyperlink of the route.
 
-      #. Click the **Local Routes** tab and then click the **Route Tables** hyperlink.
+      The route table details page is displayed.
 
-         The **Summary** tab of the default route table for the local VPC is displayed.
+   f. In the route list, locate the route and click **Modify** in the **Operation** column.
 
-      #. Locate the row that contains the route to be modified and click **Modify** in the **Operation** column.
-
-         The **Modify Route** dialog box is displayed.
-
-      #. Modify the route and click **OK**.
+   g. Modify the route and click **OK**.
 
 #. Log in to the management console using the account of the peer VPC and modify the route of the peer VPC by referring to :ref:`1 <vpc_peering_0007__li4105938135810>`.
 

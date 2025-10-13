@@ -21,9 +21,15 @@ Procedure
 #. Log in to the management console.
 
 2. Click |image1| in the upper left corner and select the desired region and project.
-3. Click |image2| in the upper left corner, and choose > **Elastic IP**.
+3. Click |image2| in the upper left corner, and choose **Network** > **Elastic IP**.
 4. In the navigation pane on the left, choose **Elastic IP and Bandwidth** > **Shared Bandwidths**.
-5. Click **OK**.
+5. In the shared bandwidth list, locate the target shared bandwidth that you want to add EIPs to. In the **Operation** column, choose **Add Public IP Address**, and select the EIPs or IPv6 addresses to be added.
+
+   .. note::
+
+      -  After an EIP is added to a shared bandwidth, the dedicated bandwidth used by the EIP will become invalid and the EIP will start to use the shared bandwidth. The EIP will be removed from the original dedicated bandwidth.
+
+6. Click **OK**.
 
 .. |image1| image:: /_static/images/en-us_image_0000001818982734.png
 .. |image2| image:: /_static/images/en-us_image_0000001818982822.png

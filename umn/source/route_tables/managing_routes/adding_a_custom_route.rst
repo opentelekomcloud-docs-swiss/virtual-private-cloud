@@ -17,11 +17,11 @@ Procedure
 
 2. Click |image1| in the upper left corner and select the desired region and project.
 
-3. Click |image2| in the upper left corner and choose > **Virtual Private Cloud**.
+3. Click |image2| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 
-4. In the navigation pane on the left, choose **Route Tables**.
+4. In the navigation pane on the left, choose **Virtual Private Cloud** > **Route Tables**.
 
 5. In the route table list, click the name of the route table to which you want to add a route.
 
@@ -40,6 +40,12 @@ Procedure
       +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
       | Parameter             | Description                                                                                                                                                          | Example Value          |
       +=======================+======================================================================================================================================================================+========================+
+      | Destination Type      | Mandatory                                                                                                                                                            | IP address             |
+      |                       |                                                                                                                                                                      |                        |
+      |                       | The destination can be:                                                                                                                                              |                        |
+      |                       |                                                                                                                                                                      |                        |
+      |                       | -  IP address: single IP address or IP address range                                                                                                                 |                        |
+      +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
       | Destination           | Mandatory                                                                                                                                                            | IPv4: 192.168.0.0/16   |
       |                       |                                                                                                                                                                      |                        |
       |                       | Enter the destination of the route. You can enter a single IP address or an IP address range in CIDR notation.                                                       |                        |

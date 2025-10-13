@@ -19,4 +19,4 @@ When you host a large number of applications on the cloud, if each EIP uses a ba
 
 -  Flexible Operations
 
-   You can add EIPs (except for **5_gray** EIPs of dedicated load balancers) to or remove them from a shared bandwidth regardless of the type of instances that they are bound to.
+   You can add EIPs to a shared bandwidth or remove them from a shared bandwidth regardless of the EIP types and the instances that they are bound to.

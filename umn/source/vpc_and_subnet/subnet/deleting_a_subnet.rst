@@ -8,12 +8,14 @@ Deleting a Subnet
 Scenarios
 ---------
 
-If your subnet is no longer required, you can delete it.
+This section describes how to delete a subnet.
 
 Notes and Constraints
 ---------------------
 
 If you want to delete a subnet that has custom routes, virtual IP addresses, or other resources, you need to delete these resources as prompted on the console first and then delete the subnet.
+
+You can refer to :ref:`Why Can't I Delete My VPCs and Subnets? <vpc_faq_0075>`
 
 Procedure
 ---------
@@ -22,11 +24,11 @@ Procedure
 
 #. Click |image1| in the upper left corner and select the desired region and project.
 
-#. Click |image2| in the upper left corner and choose > **Virtual Private Cloud**.
+#. Click |image2| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 
-#. In the navigation pane on the left, click **Subnets**.
+#. In the navigation pane on the left, choose **Virtual Private Cloud** > **Subnets**.
 
    The **Subnets** page is displayed.
 

@@ -7,6 +7,8 @@ Subnet
 
 A subnet is a unique CIDR block with a range of IP addresses in a VPC. All resources in a VPC must be deployed on subnets.
 
+-  By default, all instances in different subnets of the same VPC can communicate with each other. If you have a VPC with two subnets in it, they can communicate with each other by default.
+
 -  After a subnet is created, its CIDR block cannot be modified. Subnets in the same VPC cannot overlap.
 
    A subnet mask can be between the netmask of its VPC CIDR block and /29 netmask. If a VPC CIDR block is 10.0.0.0/16, its subnet mask can be between 16 and 29.

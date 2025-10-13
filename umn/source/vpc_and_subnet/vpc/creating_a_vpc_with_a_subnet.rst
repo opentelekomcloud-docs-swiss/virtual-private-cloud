@@ -19,7 +19,7 @@ Procedure
 
 #. Click |image1| in the upper left corner and select the desired region and project.
 
-#. Click |image2| in the upper left corner and choose > **Virtual Private Cloud**.
+#. Click |image2| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 
@@ -55,6 +55,10 @@ Procedure
       |                                     |                        | 172.16.0.0/12-24                                                                                                                                                                                                                                            |                     |
       |                                     |                        |                                                                                                                                                                                                                                                             |                     |
       |                                     |                        | 192.168.0.0/16-24                                                                                                                                                                                                                                           |                     |
+      +-------------------------------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+
+      | Basic Information                   | Enterprise Project     | The enterprise project to which the VPC belongs.                                                                                                                                                                                                            | default             |
+      |                                     |                        |                                                                                                                                                                                                                                                             |                     |
+      |                                     |                        | An enterprise project facilitates project-level management and grouping of cloud resources and users. The name of the default project is **default**.                                                                                                       |                     |
       +-------------------------------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+
       | Basic Information/Advanced Settings | Tag                    | The VPC tag, which consists of a key and value pair. You can add a maximum of 20 tags to each VPC.                                                                                                                                                          | -  Key: vpc_key1    |
       |                                     |                        |                                                                                                                                                                                                                                                             | -  Value: vpc-01    |

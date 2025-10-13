@@ -21,7 +21,7 @@ The VPC service provides free SNAT function, which allows ECSs to use a limited 
 
    #. Log in to the management console.
 
-   #. Click |image1| in the upper left corner and choose > **Virtual Private Cloud**.
+   #. Click |image1| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
       The **Virtual Private Cloud** page is displayed.
 
