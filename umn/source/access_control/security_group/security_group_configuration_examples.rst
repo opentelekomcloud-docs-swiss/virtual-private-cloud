@@ -23,11 +23,13 @@ By default, all outbound rules of a security group allow all requests from insta
 
 .. table:: **Table 1** Default outbound rules in a security group
 
-   +-----------+-----------------+-------------+-------------------------------------------------------------------------------------------------+
-   | Direction | Protocol & Port | Destination | Description                                                                                     |
-   +===========+=================+=============+=================================================================================================+
-   | Outbound  | All             | 0.0.0.0/0   | This rule allows access from instances in the security group to any IPv4 address over any port. |
-   +-----------+-----------------+-------------+-------------------------------------------------------------------------------------------------+
+   +-----------+------+-----------------+-------------+-------------------------------------------------------------------------------------------------+
+   | Direction | Type | Protocol & Port | Destination | Description                                                                                     |
+   +===========+======+=================+=============+=================================================================================================+
+   | Outbound  | IPv4 | All             | 0.0.0.0/0   | This rule allows access from instances in the security group to any IPv4 address over any port. |
+   +-----------+------+-----------------+-------------+-------------------------------------------------------------------------------------------------+
+   | Outbound  | IPv6 | All             | ::/0        | This rule allows access from instances in the security group to any IPv6 address over any port. |
+   +-----------+------+-----------------+-------------+-------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0081124350__section14933617154810:
 
@@ -44,21 +46,21 @@ A security group denies all external requests by default. To remotely log in to 
 
    .. table:: **Table 2** Remotely logging in to a Linux ECS using SSH
 
-      ========= =============== =====================
-      Direction Protocol & Port Source
-      ========= =============== =====================
-      Inbound   TCP: 22         IP address: 0.0.0.0/0
-      ========= =============== =====================
+      ========= ==== =============== =====================
+      Direction Type Protocol & Port Source
+      ========= ==== =============== =====================
+      Inbound   IPv4 TCP: 22         IP address: 0.0.0.0/0
+      ========= ==== =============== =====================
 
    .. _en-us_topic_0081124350__table1579314381815:
 
    .. table:: **Table 3** Remotely logging in to a Windows ECS using RDP
 
-      ========= =============== =====================
-      Direction Protocol & Port Source
-      ========= =============== =====================
-      Inbound   TCP: 3389       IP address: 0.0.0.0/0
-      ========= =============== =====================
+      ========= ==== =============== =====================
+      Direction Type Protocol & Port Source
+      ========= ==== =============== =====================
+      Inbound   IPv4 TCP: 3389       IP address: 0.0.0.0/0
+      ========= ==== =============== =====================
 
    .. important::
 
@@ -68,12 +70,12 @@ A security group denies all external requests by default. To remotely log in to 
 
    .. table:: **Table 4** Remotely logging in to an ECS using a specified IP address
 
-      =========== ========= =============== ==========================
-      ECS Type    Direction Protocol & Port Source
-      =========== ========= =============== ==========================
-      Linux ECS   Inbound   TCP: 22         IP address: 192.168.0.0/24
-      Windows ECS Inbound   TCP: 3389       IP address: 10.10.0.0/24
-      =========== ========= =============== ==========================
+      =========== ========= ==== =============== ==========================
+      ECS Type    Direction Type Protocol & Port Source
+      =========== ========= ==== =============== ==========================
+      Linux ECS   Inbound   IPv4 TCP: 22         IP address: 192.168.0.0/24
+      Windows ECS Inbound   IPv4 TCP: 3389       IP address: 10.10.0.0/24
+      =========== ========= ==== =============== ==========================
 
 .. _en-us_topic_0081124350__section8685162114185:
 
@@ -84,11 +86,11 @@ By default, a security group denies all external requests. If you need to remote
 
 .. table:: **Table 5** Remotely connecting to an ECS from a local server to upload or download files
 
-   ========= =============== =====================
-   Direction Protocol & Port Source
-   ========= =============== =====================
-   Inbound   TCP: 20-21      IP address: 0.0.0.0/0
-   ========= =============== =====================
+   ========= ==== =============== =====================
+   Direction Type Protocol & Port Source
+   ========= ==== =============== =====================
+   Inbound   IPv4 TCP: 20-21      IP address: 0.0.0.0/0
+   ========= ==== =============== =====================
 
 .. important::
 
@@ -103,12 +105,12 @@ A security group denies all external requests by default. If you have set up a w
 
 .. table:: **Table 6** Setting up a website on an ECS to provide services externally
 
-   ========= =============== =====================
-   Direction Protocol & Port Source
-   ========= =============== =====================
-   Inbound   TCP: 80         IP address: 0.0.0.0/0
-   Inbound   TCP: 443        IP address: 0.0.0.0/0
-   ========= =============== =====================
+   ========= ==== =============== =====================
+   Direction Type Protocol & Port Source
+   ========= ==== =============== =====================
+   Inbound   IPv4 TCP: 80         IP address: 0.0.0.0/0
+   Inbound   IPv4 TCP: 443        IP address: 0.0.0.0/0
+   ========= ==== =============== =====================
 
 .. _en-us_topic_0081124350__section29561427142511:
 
@@ -119,11 +121,12 @@ By default, a security group denies all external requests. If you need to run th
 
 .. table:: **Table 7** Using **ping** command to verify network connectivity
 
-   ========= =============== =====================
-   Direction Protocol & Port Source
-   ========= =============== =====================
-   Inbound   ICMP: All       IP address: 0.0.0.0/0
-   ========= =============== =====================
+   ========= ==== =============== =====================
+   Direction Type Protocol & Port Source
+   ========= ==== =============== =====================
+   Inbound   IPv4 ICMP: All       IP address: 0.0.0.0/0
+   Inbound   IPv6 ICMP: All       IP address: ::/0
+   ========= ==== =============== =====================
 
 .. _en-us_topic_0081124350__section094514632817:
 
@@ -134,11 +137,11 @@ ECSs in the same VPC but associated with different security groups cannot commun
 
 .. table:: **Table 8** Enabling instances in different security groups to communicate through an internal network
 
-   ========= =============== ====================
-   Direction Protocol & Port Source
-   ========= =============== ====================
-   Inbound   TCP: 3306       Security group: sg-A
-   ========= =============== ====================
+   ========= ==== =============== ====================
+   Direction Type Protocol & Port Source
+   ========= ==== =============== ====================
+   Inbound   IPv4 TCP: 3306       Security group: sg-A
+   ========= ==== =============== ====================
 
 .. _en-us_topic_0081124350__section7465183583515:
 
@@ -149,17 +152,17 @@ A security group denies all external requests by default. If you have deployed t
 
 .. table:: **Table 9** ECS providing database access service
 
-   +-----------+-----------------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-   | Direction | Protocol & Port | Source                     | Description                                                                                                                   |
-   +===========+=================+============================+===============================================================================================================================+
-   | Inbound   | TCP: 3306       | Security group: sg-A       | This rule allows ECSs in security group sg-A to access the MySQL database service.                                            |
-   +-----------+-----------------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-   | Inbound   | TCP: 1521       | Security group: sg-B       | This rule allows ECSs in security group sg-B to access the Oracle database service.                                           |
-   +-----------+-----------------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-   | Inbound   | TCP: 1433       | IP address: 172.16.3.21/32 | This rule allows the ECS whose private IP address is 172.16.3.21 to access the MS SQL database service.                       |
-   +-----------+-----------------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-   | Inbound   | TCP: 5432       | IP address: 192.168.0.0/24 | This rule allows ECSs whose private IP addresses are in the 192.168.0.0/24 network to access the PostgreSQL database service. |
-   +-----------+-----------------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+   +-----------+------+-----------------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+   | Direction | Type | Protocol & Port | Source                     | Description                                                                                                                   |
+   +===========+======+=================+============================+===============================================================================================================================+
+   | Inbound   | IPv4 | TCP: 3306       | Security group: sg-A       | This rule allows ECSs in security group sg-A to access the MySQL database service.                                            |
+   +-----------+------+-----------------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+   | Inbound   | IPv4 | TCP: 1521       | Security group: sg-B       | This rule allows ECSs in security group sg-B to access the Oracle database service.                                           |
+   +-----------+------+-----------------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+   | Inbound   | IPv4 | TCP: 1433       | IP address: 172.16.3.21/32 | This rule allows the ECS whose private IP address is 172.16.3.21 to access the MS SQL database service.                       |
+   +-----------+------+-----------------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+   | Inbound   | IPv4 | TCP: 5432       | IP address: 192.168.0.0/24 | This rule allows ECSs whose private IP addresses are in the 192.168.0.0/24 network to access the PostgreSQL database service. |
+   +-----------+------+-----------------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------+
 
 .. important::
 
@@ -176,12 +179,12 @@ By default, a security group allows all outbound traffic. :ref:`Table 11 <en-us_
 
    .. table:: **Table 10** Enabling instances in different security groups to communicate through an internal network
 
-      ========= =============== =========================
-      Direction Protocol & Port Source
-      ========= =============== =========================
-      Outbound  TCP: 80         IP address: 132.15.XX.XX
-      Outbound  TCP: 443        IP address: 145.117.XX.XX
-      ========= =============== =========================
+      ========= ==== =============== =========================
+      Direction Type Protocol & Port Source
+      ========= ==== =============== =========================
+      Outbound  IPv4 TCP: 80         IP address: 132.15.XX.XX
+      Outbound  IPv4 TCP: 443        IP address: 145.117.XX.XX
+      ========= ==== =============== =========================
 
 #. Then, delete the original outbound rules that allow all traffic shown in :ref:`Table 11 <en-us_topic_0081124350__table5759161135518>`.
 
@@ -189,8 +192,10 @@ By default, a security group allows all outbound traffic. :ref:`Table 11 <en-us_
 
    .. table:: **Table 11** Default outbound rules in a security group
 
-      +-----------+-----------------+-------------+-------------------------------------------------------------------------------------------------+
-      | Direction | Protocol & Port | Destination | Description                                                                                     |
-      +===========+=================+=============+=================================================================================================+
-      | Outbound  | All             | 0.0.0.0/0   | This rule allows access from instances in the security group to any IPv4 address over any port. |
-      +-----------+-----------------+-------------+-------------------------------------------------------------------------------------------------+
+      +-----------+------+-----------------+-------------+-------------------------------------------------------------------------------------------------+
+      | Direction | Type | Protocol & Port | Destination | Description                                                                                     |
+      +===========+======+=================+=============+=================================================================================================+
+      | Outbound  | IPv4 | All             | 0.0.0.0/0   | This rule allows access from instances in the security group to any IPv4 address over any port. |
+      +-----------+------+-----------------+-------------+-------------------------------------------------------------------------------------------------+
+      | Outbound  | IPv6 | All             | ::/0        | This rule allows access from instances in the security group to any IPv6 address over any port. |
+      +-----------+------+-----------------+-------------+-------------------------------------------------------------------------------------------------+

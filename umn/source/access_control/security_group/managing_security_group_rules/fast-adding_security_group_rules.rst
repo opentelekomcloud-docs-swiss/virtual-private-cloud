@@ -17,7 +17,7 @@ Procedure
 
 2.  Click |image1| in the upper left corner and select the desired region and project.
 
-3.  Click |image2| in the upper left corner and choose > **Virtual Private Cloud**.
+3.  Click |image2| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
     The **Virtual Private Cloud** page is displayed.
 
@@ -53,10 +53,10 @@ Procedure
        +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
        | Source                | Source of the security group rule. The value can be an IP address or a security group to allow access from IP addresses or instances in the security group. You can specify: | 0.0.0.0/0             |
        |                       |                                                                                                                                                                              |                       |
-       |                       | -  Single IP address: 192.168.10.10/32 (IPv4); 2002:50::44/127 (IPv6)                                                                                                        |                       |
-       |                       | -  IP address range: 192.168.1.0/24 (IPv4); 2407:c080:802:469::/64 (IPv6)                                                                                                    |                       |
+       |                       | -  xxx.xxx.xxx.xxx/32 (IPv4 address)                                                                                                                                         |                       |
+       |                       | -  xxx.xxx.xxx.0/24 (IPv4 address range)                                                                                                                                     |                       |
+       |                       | -  sg-abc (security group)                                                                                                                                                   |                       |
        |                       | -  All IP addresses: 0.0.0.0/0 (IPv4); ::/0 (IPv6)                                                                                                                           |                       |
-       |                       | -  Security group: sg-abc                                                                                                                                                    |                       |
        |                       |                                                                                                                                                                              |                       |
        |                       | If the source is a security group, this rule will apply to all instances associated with the selected security group.                                                        |                       |
        +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
@@ -93,10 +93,10 @@ Procedure
        +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
        | Destination           | Destination of the security group rule. The value can be an IP address or a security group to allow access to IP addresses or instances in the security group. You can specify: | 0.0.0.0/0             |
        |                       |                                                                                                                                                                                 |                       |
-       |                       | -  Single IP address: 192.168.10.10/32 (IPv4); 2002:50::44/127 (IPv6)                                                                                                           |                       |
-       |                       | -  IP address range: 192.168.1.0/24 (IPv4); 2407:c080:802:469::/64 (IPv6)                                                                                                       |                       |
+       |                       | -  xxx.xxx.xxx.xxx/32 (IPv4 address)                                                                                                                                            |                       |
+       |                       | -  xxx.xxx.xxx.0/24 (IPv4 address range)                                                                                                                                        |                       |
+       |                       | -  sg-abc (security group)                                                                                                                                                      |                       |
        |                       | -  All IP addresses: 0.0.0.0/0 (IPv4); ::/0 (IPv6)                                                                                                                              |                       |
-       |                       | -  Security group: sg-abc                                                                                                                                                       |                       |
        +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
        | Description           | (Optional) Supplementary information about the security group rule.                                                                                                             | ``-``                 |
        |                       |                                                                                                                                                                                 |                       |

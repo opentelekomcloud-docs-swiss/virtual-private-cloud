@@ -13,6 +13,10 @@ You can modify the following information about a VPC:
 -  :ref:`Modifying the Name and Description of a VPC <en-us_topic_0030969462__section495418425354>`
 -  :ref:`Modifying the CIDR Block of a VPC <en-us_topic_0030969462__section696206193617>`
 
+   .. note::
+
+      If the :ref:`secondary IPv4 CIDR block <vpc_vpc_0007>` function is available in a region, the CIDR block of a VPC in this region cannot be modified through the console. You can call an API to modify VPC CIDR block by referring to section "Updating VPC Information" in the *Virtual Private Cloud API Reference*.
+
 .. _en-us_topic_0030969462__section495418425354:
 
 Modifying the Name and Description of a VPC
@@ -22,7 +26,7 @@ Modifying the Name and Description of a VPC
 
 #. Click |image1| in the upper left corner and select the desired region and project.
 
-#. Click |image2| in the upper left corner and choose > **Virtual Private Cloud**.
+#. Click |image2| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 
@@ -56,7 +60,7 @@ Modifying the CIDR Block of a VPC
 
 #. Click |image6| in the upper left corner and select the desired region and project.
 
-#. Click |image7| in the upper left corner and choose > **Virtual Private Cloud**.
+#. Click |image7| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 

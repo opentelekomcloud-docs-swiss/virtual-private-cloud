@@ -23,11 +23,11 @@ Procedure
 
 #. Click |image1| in the upper left corner and select the desired region and project.
 
-#. Click |image2| in the upper left corner and choose > **Virtual Private Cloud**.
+#. Click |image2| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 
-#. In the navigation pane on the left, click **Subnets**.
+#. In the navigation pane on the left, choose **Virtual Private Cloud** > **Subnets**.
 
    The **Subnets** page is displayed.
 
@@ -38,7 +38,7 @@ Procedure
 #. On the **Summary** page, view the resources in the subnet.
 
    a. In the **Resources** area, view the quantities of resources, such as ECSs, BMSs, and load balancers, in the subnet. Click the resource quantity with a hyperlink to view the resources in the subnet.
-   b. In the **Networking Components** area on the right of the page, view the NAT gateways in the subnet.
+   b. In the **Networking Components** area on the right of the page, view the NAT gateway, route table, and subnet.
 
 #. Delete resources from the subnet.
 

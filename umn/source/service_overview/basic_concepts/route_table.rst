@@ -25,12 +25,10 @@ Both IPv4 and IPv6 routes are supported.
 
 -  Custom route table: If you do not want to use the default route table, you can create a custom route table and associate it with the subnet. Custom route tables can be deleted if they are no longer required.
 
-   The custom route table associated with a subnet affects only the outbound traffic. The default route table of a subnet controls the inbound traffic.
-
 Route
 -----
 
-You can add routes to default and custom route tables and configure the destination, next hop type, and next hop in the routes to determine where network traffic is directed. Routes are classified into system routes and custom routes.
+You can add routes to default and custom route tables and configure the destination type, destination, next hop type, and next hop in the routes to determine where network traffic is directed. Routes are classified into system routes and custom routes.
 
 -  System routes: These routes are automatically added by the system and cannot be modified or deleted.
 

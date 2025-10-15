@@ -19,11 +19,11 @@ Procedure
 
 2. Click |image1| in the upper left corner and select the desired region and project.
 
-3. Click |image2| in the upper left corner and choose > **Virtual Private Cloud**.
+3. Click |image2| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 
-4. In the navigation pane on the left, click **Subnets**.
+4. In the navigation pane on the left, choose **Virtual Private Cloud** > **Subnets**.
 
 5. Click **Create Subnet**.
 
@@ -45,6 +45,8 @@ Procedure
       |                                      | The name can contain a maximum of 64 characters, which may consist of letters, digits, underscores (_), hyphens (-), and periods (.). The name cannot contain spaces.                                                                                       |                       |
       +--------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
       | IPv4 CIDR Block                      | The CIDR block for the subnet. This value must be within the VPC CIDR block.                                                                                                                                                                                | 192.168.0.0/24        |
+      |                                      |                                                                                                                                                                                                                                                             |                       |
+      |                                      | If the VPC has a secondary CIDR block, you can select the primary or the secondary CIDR block that the subnet will belong to based on service requirements.                                                                                                 |                       |
       +--------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
       | IPv6 CIDR Block                      | Specifies whether to set **IPv6 CIDR Block** to **Enable**.                                                                                                                                                                                                 | ``-``                 |
       |                                      |                                                                                                                                                                                                                                                             |                       |

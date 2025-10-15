@@ -22,7 +22,7 @@ Procedure
 
 2. Click |image1| in the upper left corner and select the desired region and project.
 
-3. Click |image2| in the upper left corner, and choose > **Elastic IP**.
+3. Click |image2| in the upper left corner, and choose **Network** > **Elastic IP**.
 
 4. In the navigation pane on the left, choose **Elastic IP and Bandwidth** > **Shared Bandwidths**.
 5. In the shared bandwidth list, locate the row that contains the shared bandwidth you want to delete, click **More** in the **Operation** column, and then click **Delete**.

@@ -19,14 +19,16 @@ Procedure
 
 #. Click |image1| in the upper left corner and select the desired region and project.
 
-#. Click |image2| in the upper left corner and choose > **Virtual Private Cloud**.
+#. Click |image2| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 
-#. In the upper right corner of the VPC list, click |image3|.
+#. In the upper left corner above the VPC list, click **Export**.
 
-   The system will automatically export information about all VPCs under your account in the current region as an Excel file to a local directory.
+   -  **Export selected data to an XLSX file**: Select one or more VPCs and export information about the selected VPCs.
+   -  **Export all data to an XLSX file**: Export information about all the VPCs in the current region.
+
+   The system will automatically export information about the VPCs as an Excel file to a local directory.
 
 .. |image1| image:: /_static/images/en-us_image_0000001818982734.png
 .. |image2| image:: /_static/images/en-us_image_0000001818823378.png
-.. |image3| image:: /_static/images/en-us_image_0000001865582909.png

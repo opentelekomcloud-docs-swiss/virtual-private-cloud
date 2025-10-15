@@ -96,27 +96,27 @@ With CTS, you can record operations performed on the VPC service for further que
    +----------------------------------------+----------------------+---------------------------+
    | Deleting a VPC peering connection      | vpc-peerings         | deleteVpcPeerings         |
    +----------------------------------------+----------------------+---------------------------+
-   | Creating a network ACL group           | firewall-groups      | createFirewallGroup       |
+   | Creating a firewall group              | firewall-groups      | createFirewallGroup       |
    +----------------------------------------+----------------------+---------------------------+
-   | Updating a network ACL group           | firewall-groups      | updateFirewallGroup       |
+   | Updating a firewall group              | firewall-groups      | updateFirewallGroup       |
    +----------------------------------------+----------------------+---------------------------+
-   | Deleting a network ACL group           | firewall-groups      | deleteFirewallGroup       |
+   | Deleting a firewall group              | firewall-groups      | deleteFirewallGroup       |
    +----------------------------------------+----------------------+---------------------------+
-   | Creating a network ACL policy          | firewall-policies    | createFirewallPolicy      |
+   | Creating a firewall policy             | firewall-policies    | createFirewallPolicy      |
    +----------------------------------------+----------------------+---------------------------+
-   | Updating a network ACL policy          | firewall-policies    | updateFirewallPolicy      |
+   | Updating a firewall policy             | firewall-policies    | updateFirewallPolicy      |
    +----------------------------------------+----------------------+---------------------------+
-   | Deleting a network ACL policy          | firewall-policies    | deleteFirewallPolicy      |
+   | Deleting a firewall policy             | firewall-policies    | deleteFirewallPolicy      |
    +----------------------------------------+----------------------+---------------------------+
-   | Inserting a network ACL rule           | firewall-policies    | insertFirewallPolicyRule  |
+   | Inserting a firewall rule              | firewall-policies    | insertFirewallPolicyRule  |
    +----------------------------------------+----------------------+---------------------------+
-   | Removing a network ACL rule            | firewall-policies    | removeFirewallPolicyRule  |
+   | Removing a firewall rule               | firewall-policies    | removeFirewallPolicyRule  |
    +----------------------------------------+----------------------+---------------------------+
-   | Creating a network ACL rule            | firewall-rules       | createFirewallRule        |
+   | Creating a firewall rule               | firewall-rules       | createFirewallRule        |
    +----------------------------------------+----------------------+---------------------------+
-   | Updating a network ACL rule            | firewall-rules       | updateFirewallRule        |
+   | Updating a firewall rule               | firewall-rules       | updateFirewallRule        |
    +----------------------------------------+----------------------+---------------------------+
-   | Deleting a network ACL rule            | firewall-rules       | deleteFirewallRule        |
+   | Deleting a firewall rule               | firewall-rules       | deleteFirewallRule        |
    +----------------------------------------+----------------------+---------------------------+
    | Creating a flow log                    | flowlogs             | createFlowLog             |
    +----------------------------------------+----------------------+---------------------------+

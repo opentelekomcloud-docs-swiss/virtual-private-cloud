@@ -17,17 +17,13 @@ Procedure
 
 2. Click |image1| in the upper left corner and select the desired region and project.
 
-3. Click |image2| in the upper left corner and choose > **Virtual Private Cloud**.
+3. Click |image2| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 
-4. In the navigation pane on the left, choose **Route Tables**.
+4. In the navigation pane on the left, choose **Virtual Private Cloud** > **Route Tables**.
 
-5. On the displayed page, click |image3| in the upper right of the route table list.
-
-   The system will automatically export information about all route tables under your account in the current region as an Excel file to a local directory.
-
-6. In the upper left corner above the route table list, click **Export**.
+5. In the upper left corner above the route table list, click **Export**.
 
    -  **Export selected data to an XLSX file**: Select one or more route tables and export information about the selected route tables.
    -  **Export all data to an XLSX file**: Export information about all the route tables in the current region.
@@ -36,4 +32,3 @@ Procedure
 
 .. |image1| image:: /_static/images/en-us_image_0000001818982734.png
 .. |image2| image:: /_static/images/en-us_image_0000001865582809.png
-.. |image3| image:: /_static/images/en-us_image_0000001818823274.png

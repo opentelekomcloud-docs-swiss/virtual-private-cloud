@@ -16,7 +16,7 @@ Procedure
 #. Log in to the management console.
 
 2. Click |image1| in the upper left corner and select the desired region and project.
-3. Click |image2| in the upper left corner, and choose > **Elastic IP**.
+3. Click |image2| in the upper left corner, and choose **Network** > **Elastic IP**.
 4. In the navigation pane on the left, choose **Elastic IP and Bandwidth** > **Shared Bandwidths**.
 5. In the shared bandwidth list, locate the row that contains the shared bandwidth you want to modify, click **Modify Bandwidth** in the **Operation** column, and modify the bandwidth settings.
 6. Click **Next**.

@@ -20,7 +20,7 @@ Adding an Instance to a Security Group
 
 #. Click |image1| in the upper left corner and select the desired region and project.
 
-#. Click |image2| in the upper left corner and choose > **Virtual Private Cloud**.
+#. Click |image2| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 
@@ -51,7 +51,7 @@ An instance must be added to at least one security group. If you want to remove 
 
 #. Click |image3| in the upper left corner and select the desired region and project.
 
-#. Click |image4| in the upper left corner and choose > **Virtual Private Cloud**.
+#. Click |image4| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 
@@ -72,6 +72,11 @@ An instance must be added to at least one security group. If you want to remove 
    A confirmation dialog box is displayed.
 
 #. Confirm the information and click **OK**.
+
+Follow-Up Operations
+--------------------
+
+You can delete the security groups that you no longer need. Deleting a security group will also delete all security group rules in the security group. For details, see :ref:`Deleting a Security Group <vpc_securitygroup_0008>`.
 
 .. |image1| image:: /_static/images/en-us_image_0000001818982734.png
 .. |image2| image:: /_static/images/en-us_image_0000001818982974.png

@@ -23,12 +23,12 @@ Procedure
 
 2. Click |image1| in the upper left corner and select the desired region and project.
 
-3. Click |image2| in the upper left corner and choose > **Virtual Private Cloud**.
+3. Click |image2| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 
 4. In the navigation pane on the left, choose **VPC Flow Logs**.
-5. Locate the VPC flow log to be enabled or disabled, and click **Enable** or **Disable** in the **Operation** column.
+5. Locate the VPC flow log to be enabled or disabled, and choose **More** > **Enable** or **More** > **Disable** in the **Operation** column.
 6. Click **OK**.
 
 .. |image1| image:: /_static/images/en-us_image_0000001818982734.png

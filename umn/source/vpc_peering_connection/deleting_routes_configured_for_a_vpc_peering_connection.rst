@@ -22,11 +22,11 @@ Deleting Routes of a VPC Peering Connection Between VPCs in the Same Account
 
 #. Click |image1| in the upper left corner and select the desired region and project.
 
-#. Click |image2| in the upper left corner and choose > **Virtual Private Cloud**.
+#. Click |image2| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 
-#. In the navigation pane on the left, click **VPC Peering**.
+#. In the navigation pane on the left, choose **Virtual Private Cloud** > **VPC Peering Connections**.
 
    The VPC peering connection list is displayed.
 
@@ -53,11 +53,11 @@ Only the account owner of a VPC in a VPC peering connection can delete the route
 
    a. Click |image3| in the upper left corner and select the desired region and project.
 
-   b. Click |image4| in the upper left corner and choose > **Virtual Private Cloud**.
+   b. Click |image4| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
       The **Virtual Private Cloud** page is displayed.
 
-   c. In the navigation pane on the left, click **VPC Peering**.
+   c. In the navigation pane on the left, choose **Virtual Private Cloud** > **VPC Peering Connections**.
 
       The VPC peering connection list is displayed.
 

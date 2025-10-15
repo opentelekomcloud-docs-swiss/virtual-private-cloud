@@ -24,6 +24,11 @@ If you want to release a virtual IP address that is being used by a resource, re
    +===================================================================================================================================+=====================================================================================================================================+
    | This operation cannot be performed because the IP address is bound to an instance or an EIP. Unbind the IP address and try again. | This virtual IP address is being used by an EIP or an ECS.                                                                          |
    |                                                                                                                                   |                                                                                                                                     |
+   |                                                                                                                                   | Unbind the virtual IP address first.                                                                                                |
+   |                                                                                                                                   |                                                                                                                                     |
+   |                                                                                                                                   | -  EIP: :ref:`Unbinding a Virtual IP Address from an EIP <vpc_vip_0011>`                                                            |
+   |                                                                                                                                   | -  ECS: :ref:`Unbinding a Virtual IP Address from an Instance <vpc_vip_0010>`                                                       |
+   |                                                                                                                                   |                                                                                                                                     |
    |                                                                                                                                   | Release the virtual IP address.                                                                                                     |
    +-----------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
    | This operation cannot be performed because the IP address is being used by a system component.                                    | The virtual IP address is being used by an RDS DB instance. Delete the DB instance, which will also release its virtual IP address. |
@@ -36,17 +41,15 @@ Procedure
 
 #. Click |image1| in the upper left corner and select the desired region and project.
 
-#. Click |image2| in the upper left corner and choose > **Virtual Private Cloud**.
+#. Click |image2| in the upper left corner and choose **Network** > **Virtual Private Cloud**.
 
    The **Virtual Private Cloud** page is displayed.
 
-#. On the **Virtual Private Cloud** page, locate the VPC containing the subnet from which a virtual IP address is to be released, and click the VPC name.
+#. In the navigation pane on the left, choose **Virtual Private Cloud** > **Subnets**.
 
-#. On the **Subnets** tab, click the name of the subnet from which a virtual IP address is to be released.
+#. Click the name of the subnet that the virtual IP address belongs to.
 
-#. Click the **Virtual IP Addresses** tab, locate the row that contains the virtual IP address to be released, click **More** in the **Operation** column, and select **Release**.
-
-#. In the navigation pane on the left, click **Subnets**.
+#. Click the **IP Addresses** tab, locate the row that contains the virtual IP address to be released, click **More** in the **Operation** column, and select **Release**.
 
 #. Confirm the information and click **OK**.
 

@@ -47,17 +47,7 @@ Procedure
 
 #. Click |image1| in the upper left corner and select the desired region and project.
 
-#. Click |image2| in the upper left corner, and choose > **Elastic IP**.
-
-#. Click the search box above the EIP list.
-
-#. Select the tag key and value of the EIP.
-
-   You can add multiple tag keys and values to refine your search results. If you add more than one tag to search for EIPs, the system will display only the EIPs that contain all of the tags you specified.
-
-#. Click **OK**.
-
-   The system displays the EIPs you are looking for based on the entered tag keys and values.
+#. Click |image2| in the upper left corner, and choose **Network** > **Elastic IP**.
 
 #. In the search box above the EIP list, click anywhere in the box to set filters.
 
@@ -71,7 +61,7 @@ Procedure
 
 #. Log in to the management console.
 #. Click |image3| in the upper left corner and select the desired region and project.
-#. Click |image4| in the upper left corner, and choose > **Elastic IP**.
+#. Click |image4| in the upper left corner, and choose **Network** > **Elastic IP**.
 #. On the displayed page, locate the EIP whose tags you want to manage, and click the EIP name.
 #. On the page showing EIP details, click the **Tags** tab and perform desired operations on tags.
 

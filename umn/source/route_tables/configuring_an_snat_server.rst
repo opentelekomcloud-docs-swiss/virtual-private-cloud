@@ -34,7 +34,7 @@ Procedure
 
 #. Click the network interface's IP address to view details and disable **Source/Destination Check**.
 
-   By default, the source/destination check is enabled. When this check is enabled, the system checks whether source IP addresses contained in the packets sent by ECSs are correct. If the IP addresses are incorrect, the system does not allow the ECSs to send the packets. This mechanism prevents packet spoofing, thereby improving system security. If the SNAT function is used, the SNAT server needs to forward packets. This mechanism prevents the packet sender from receiving returned packets. Therefore, you need to disable the source/destination check for SNAT servers.
+   This prevents packet spoofing and improves system security. If SNAT is used, the SNAT server needs to forward packets. This mechanism prevents the packet sender from receiving returned packets. To change this behavior, you can disable the source/destination check for SNAT servers.
 
 #. Bind an EIP.
 
